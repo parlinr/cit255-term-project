@@ -25,7 +25,7 @@ namespace TermProject
         public MainPage()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(Passers));
+            MyFrame.Navigate(typeof(PasserPage));
         }
     }
 }

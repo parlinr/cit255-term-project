@@ -136,13 +136,13 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeNameTable[0] = "TermProject.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "TermProject.Views.Passers";
+            _typeNameTable[3] = "TermProject.PasserPage";
 
             _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::TermProject.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::TermProject.Views.Passers);
+            _typeTable[3] = typeof(global::TermProject.PasserPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -178,7 +178,7 @@ namespace TermProject.TermProject_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::TermProject.MainPage(); }
-        private object Activate_3_Passers() { return new global::TermProject.Views.Passers(); }
+        private object Activate_3_PasserPage() { return new global::TermProject.PasserPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -205,9 +205,9 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  TermProject.Views.Passers
+            case 3:   //  TermProject.PasserPage
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Passers;
+                userType.Activator = Activate_3_PasserPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

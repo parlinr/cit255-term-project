@@ -19,6 +19,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Inlines" />
     </RootType>
-    <RootType FullName="TermProject.Views.Passers" />
+    <RootType FullName="TermProject.PasserPage" />
   </Roots.RootTypes>
 </Roots>
