@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B370157F73C5C2F08E86164EBF92578781EB5C7FA792F76AD1AF65A4FEC094AD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>2D762A2B1B366D78742197FD5CCCAF5EFA8D851E416678E0C4FA173D7AE54515</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>772e3bb6-64a3-4960-90b8-5bf26d17d94f_1.0.0.0_x86__2vvt8rbymf9fe</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>772e3bb6-64a3-4960-90b8-5bf26d17d94f_2vvt8rbymf9fe!App</RegisteredUserModeAppID>
     <RegisteredPackageID>772e3bb6-64a3-4960-90b8-5bf26d17d94f</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:17:58.857</Modified>
+      <Modified>2017-11-30T17:37:27.240</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
-      <Modified>2017-11-29T17:17:57.149</Modified>
+      <Modified>2017-11-30T17:37:25.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,45 +497,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-11-29T17:08:26.345</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-11-29T17:08:26.308</Modified>
+      <Modified>2017-11-30T16:50:58.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.312</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.312</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.316</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.320</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.321</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:08:26.325</Modified>
+      <Modified>2017-11-30T16:50:58.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.xr.xml">
       <PackagePath>TermProject.xr.xml</PackagePath>
-      <Modified>2017-11-29T17:17:56.749</Modified>
+      <Modified>2017-11-30T17:37:25.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T17:17:58.513</Modified>
+      <Modified>2017-11-30T17:37:26.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
       <PackagePath>TermProject.exe</PackagePath>
-      <Modified>2017-11-29T17:17:58.850</Modified>
+      <Modified>2017-11-30T17:37:27.230</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

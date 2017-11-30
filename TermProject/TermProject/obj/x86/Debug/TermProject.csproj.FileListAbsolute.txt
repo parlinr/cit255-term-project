@@ -211,3 +211,8 @@ C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Deb
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\Views\Passers.g.i.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\Views\Passers.g.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\Views\Passers.xaml
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\Views\Passers.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Views\Passers.xbf
