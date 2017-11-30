@@ -216,3 +216,12 @@ C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Deb
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\PasserPage.g.cs
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\PasserPage.xaml
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\PasserPage.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\sni.dll
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\System.Console.dll
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\System.Data.SqlClient.dll
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\System.Security.Principal.Windows.dll
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\FxResources.System.Data.SqlClient.SR.resw
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\FxResources.System.Security.Principal.Windows.SR.resw

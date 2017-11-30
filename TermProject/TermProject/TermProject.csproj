@@ -101,9 +101,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Passers.cs" />
-    <Compile Include="Models\Receivers.cs" />
-    <Compile Include="Models\Rushers.cs" />
+    <Compile Include="Models\Passer.cs" />
+    <Compile Include="Models\Receiver.cs" />
+    <Compile Include="Models\Rusher.cs" />
     <Compile Include="PasserPage.xaml.cs">
       <DependentUpon>PasserPage.xaml</DependentUpon>
     </Compile>
@@ -113,6 +113,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Resources.resw" />
     <None Include="TermProject_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

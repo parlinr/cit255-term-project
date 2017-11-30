@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TermProject
 {
-    public class Rushers
+    public class Receiver
     {
         #region FIELDS
         private double _score;
@@ -16,6 +16,7 @@ namespace TermProject
         private string _teamNameShort;
         private int _yards;
         private int _touchdowns;
+        
         #endregion
 
         #region PROPERTIES
@@ -26,12 +27,12 @@ namespace TermProject
         public string TeamNameShort { get; set; }
         public int Yards { get; set; }
         public int Touchdowns { get; set; }
-
+        
 
         #endregion
 
         #region CONSTRUCTORS
-        public Rushers()
+        public Receiver()
         {
 
         }

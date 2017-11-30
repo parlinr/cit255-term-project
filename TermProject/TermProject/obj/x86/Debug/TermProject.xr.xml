@@ -16,8 +16,9 @@
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="TermProject.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Inlines" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Name" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="TermProject.PasserPage" />
   </Roots.RootTypes>

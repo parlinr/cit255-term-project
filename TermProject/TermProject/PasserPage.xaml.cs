@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,28 @@ namespace TermProject
         public PasserPage()
         {
             this.InitializeComponent();
+        }
+
+        private void PasserPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            ListPassers();
+
+        }
+
+        public void ListPassers()
+        {
+            SQLRepository repo = new SQLRepository(Table.Passers);
+            List<Passer> passers = new List<Passer>();
+            passers = repo.Passers;
+
+            ListView listView1 = new ListView();
+            ObservableCollection<Passer> listViewItems = new ObservableCollection<Passer>();
+            foreach (Passer p in passers)
+            {
+                listViewItems.Add(p);
+            }
+            listView1.ItemsSource = listViewItems;
+            stackPanel1.Children.Add(listView1);
         }
     }
 }

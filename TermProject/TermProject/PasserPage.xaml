@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock>Lorem Ipsum</TextBlock>
+        <!-- <TextBlock>Lorem Ipsum</TextBlock> -->
+        <StackPanel Name="stackPanel1" Loaded="PasserPage_Loaded">
+            
+            
+        </StackPanel>
     </Grid>
 </Page>
