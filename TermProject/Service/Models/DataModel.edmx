@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="NFLOffensePassing">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="date" />
+          <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+          <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+          <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+          <Property Name="completions" Type="int" />
+          <Property Name="attempts" Type="int" />
+          <Property Name="yards" Type="int" />
+          <Property Name="averageYardsPerCompletion" Type="float" />
+          <Property Name="touchdownPasses" Type="int" />
+          <Property Name="interceptionsThrown" Type="int" />
+          <Property Name="numberOfSacks" Type="int" />
+          <Property Name="yardsLostOnSacks" Type="int" />
+          <Property Name="qbr" Type="float" />
+          <Property Name="passerRating" Type="float" />
+          <Property Name="weekNumber" Type="int" />
+          <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NFLOffenseReceiving">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="date" />
+          <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+          <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+          <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+          <Property Name="receptions" Type="int" />
+          <Property Name="yards" Type="int" />
+          <Property Name="averageYardsPerReception" Type="float" />
+          <Property Name="touchdowns" Type="int" />
+          <Property Name="longestReception" Type="float" />
+          <Property Name="targets" Type="int" />
+          <Property Name="weekNumber" Type="int" />
+          <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NFLOffenseRushing">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="date" />
+          <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+          <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+          <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+          <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+          <Property Name="carries" Type="int" />
+          <Property Name="yards" Type="int" />
+          <Property Name="averageYardsPerCarry" Type="float" />
+          <Property Name="touchdowns" Type="int" />
+          <Property Name="longestCarry" Type="int" />
+          <Property Name="weekNumber" Type="int" />
+          <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="testModelStoreContainer">
+          <EntitySet Name="NFLOffensePassing" EntityType="Self.NFLOffensePassing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NFLOffenseReceiving" EntityType="Self.NFLOffenseReceiving" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NFLOffenseRushing" EntityType="Self.NFLOffenseRushing" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NFLOffensePassing">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="completions" Type="Int32" />
+          <Property Name="attempts" Type="Int32" />
+          <Property Name="yards" Type="Int32" />
+          <Property Name="averageYardsPerCompletion" Type="Double" />
+          <Property Name="touchdownPasses" Type="Int32" />
+          <Property Name="interceptionsThrown" Type="Int32" />
+          <Property Name="numberOfSacks" Type="Int32" />
+          <Property Name="yardsLostOnSacks" Type="Int32" />
+          <Property Name="qbr" Type="Double" />
+          <Property Name="passerRating" Type="Double" />
+          <Property Name="weekNumber" Type="Int32" />
+          <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="NFLOffenseReceiving">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="receptions" Type="Int32" />
+          <Property Name="yards" Type="Int32" />
+          <Property Name="averageYardsPerReception" Type="Double" />
+          <Property Name="touchdowns" Type="Int32" />
+          <Property Name="longestReception" Type="Double" />
+          <Property Name="targets" Type="Int32" />
+          <Property Name="weekNumber" Type="Int32" />
+          <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="NFLOffenseRushing">
+          <Key>
+            <PropertyRef Name="recordNumber" />
+          </Key>
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="carries" Type="Int32" />
+          <Property Name="yards" Type="Int32" />
+          <Property Name="averageYardsPerCarry" Type="Double" />
+          <Property Name="touchdowns" Type="Int32" />
+          <Property Name="longestCarry" Type="Int32" />
+          <Property Name="weekNumber" Type="Int32" />
+          <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="testEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NFLOffensePassings" EntityType="Self.NFLOffensePassing" />
+          <EntitySet Name="NFLOffenseReceivings" EntityType="Self.NFLOffenseReceiving" />
+          <EntitySet Name="NFLOffenseRushings" EntityType="Self.NFLOffenseRushing" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModelStoreContainer" CdmEntityContainer="testEntities1">
+          <EntitySetMapping Name="NFLOffensePassings">
+            <EntityTypeMapping TypeName="testModel.NFLOffensePassing">
+              <MappingFragment StoreEntitySet="NFLOffensePassing">
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+                <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+                <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+                <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+                <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+                <ScalarProperty Name="completions" ColumnName="completions" />
+                <ScalarProperty Name="attempts" ColumnName="attempts" />
+                <ScalarProperty Name="yards" ColumnName="yards" />
+                <ScalarProperty Name="averageYardsPerCompletion" ColumnName="averageYardsPerCompletion" />
+                <ScalarProperty Name="touchdownPasses" ColumnName="touchdownPasses" />
+                <ScalarProperty Name="interceptionsThrown" ColumnName="interceptionsThrown" />
+                <ScalarProperty Name="numberOfSacks" ColumnName="numberOfSacks" />
+                <ScalarProperty Name="yardsLostOnSacks" ColumnName="yardsLostOnSacks" />
+                <ScalarProperty Name="qbr" ColumnName="qbr" />
+                <ScalarProperty Name="passerRating" ColumnName="passerRating" />
+                <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+                <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NFLOffenseReceivings">
+            <EntityTypeMapping TypeName="testModel.NFLOffenseReceiving">
+              <MappingFragment StoreEntitySet="NFLOffenseReceiving">
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+                <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+                <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+                <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+                <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+                <ScalarProperty Name="receptions" ColumnName="receptions" />
+                <ScalarProperty Name="yards" ColumnName="yards" />
+                <ScalarProperty Name="averageYardsPerReception" ColumnName="averageYardsPerReception" />
+                <ScalarProperty Name="touchdowns" ColumnName="touchdowns" />
+                <ScalarProperty Name="longestReception" ColumnName="longestReception" />
+                <ScalarProperty Name="targets" ColumnName="targets" />
+                <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+                <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NFLOffenseRushings">
+            <EntityTypeMapping TypeName="testModel.NFLOffenseRushing">
+              <MappingFragment StoreEntitySet="NFLOffenseRushing">
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+                <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+                <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+                <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+                <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+                <ScalarProperty Name="carries" ColumnName="carries" />
+                <ScalarProperty Name="yards" ColumnName="yards" />
+                <ScalarProperty Name="averageYardsPerCarry" ColumnName="averageYardsPerCarry" />
+                <ScalarProperty Name="touchdowns" ColumnName="touchdowns" />
+                <ScalarProperty Name="longestCarry" ColumnName="longestCarry" />
+                <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+                <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

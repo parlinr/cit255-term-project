@@ -1,0 +1,6 @@
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\bin\Debug\SQLAccess.exe.config
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\bin\Debug\SQLAccess.exe
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\bin\Debug\SQLAccess.pdb
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\obj\Debug\SQLAccess.csprojResolveAssemblyReference.cache
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\obj\Debug\SQLAccess.exe
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\SQLAccess\obj\Debug\SQLAccess.pdb

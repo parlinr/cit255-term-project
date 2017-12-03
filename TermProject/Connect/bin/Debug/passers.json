@@ -1,0 +1,3952 @@
+[
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 368,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 267,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 187,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 224,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 321,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Glennon",
+    "FirstName": "Mike",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 213,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 121,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 170,
+    "Touchdowns": 0,
+    "Interceptions": 4
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 263,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 222,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 268,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 292,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 262,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 256,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 307,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 240,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 125,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 102,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 62,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Tolzien",
+    "FirstName": "Scott",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 128,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 51,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 306,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mannion",
+    "FirstName": "Sean",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 12,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 158,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 311,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 171,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 193,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 220,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 268,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 291,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bradford",
+    "FirstName": "Sam",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 346,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 192,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 219,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 125,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 224,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 332,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 216,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 333,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 251,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 447,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 356,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 167,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 243,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Glennon",
+    "FirstName": "Mike",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 301,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 204,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 125,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 228,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 215,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 223,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 182,
+    "Touchdowns": 0,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hogan",
+    "FirstName": "Kevin",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 118,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 217,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 166,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 230,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 230,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Landry",
+    "FirstName": "Jarvis",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 331,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 238,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 231,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 179,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 219,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 99,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 198,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 343,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 252,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 122,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 239,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 292,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 332,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mallett",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 36,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 28,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 244,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Henne",
+    "FirstName": "Chad",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 259,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 213,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 235,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Glennon",
+    "FirstName": "Mike",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 101,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 294,
+    "Touchdowns": 2,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 264,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 242,
+    "Touchdowns": 2,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 259,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 328,
+    "Touchdowns": 2,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 369,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 301,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 378,
+    "Touchdowns": 5,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 220,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 249,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 366,
+    "Touchdowns": 3,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 176,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 220,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 167,
+    "Touchdowns": 0,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Anderson",
+    "FirstName": "Derek",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 17,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 373,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 225,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 212,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 313,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 155,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 237,
+    "Touchdowns": 0,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 118,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 365,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 183,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 325,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Glennon",
+    "FirstName": "Mike",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 218,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 179,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 268,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 164,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 182,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 242,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 286,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 118,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hogan",
+    "FirstName": "Kevin",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 65,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 255,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 252,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 209,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 219,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 316,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 307,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 140,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 224,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 216,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 235,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 96,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cassel",
+    "FirstName": "Matt",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 21,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 283,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 234,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 357,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 242,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 347,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 288,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 332,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 143,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manuel",
+    "FirstName": "EJ",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 106,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 179,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 157,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 295,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 220,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 293,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 303,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 334,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 166,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 328,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 194,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hogan",
+    "FirstName": "Kevin",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 194,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 87,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 355,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 229,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 353,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 314,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cassel",
+    "FirstName": "Matt",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 141,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 92,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Gray",
+    "FirstName": "MarQueis",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 258,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 225,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 291,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 304,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 95,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 312,
+    "Touchdowns": 0,
+    "Interceptions": 5
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 222,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manuel",
+    "FirstName": "EJ",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 159,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 198,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McEvoy",
+    "FirstName": "Tanner",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 288,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 221,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 251,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 324,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 261,
+    "Touchdowns": 5,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 140,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bradford",
+    "FirstName": "Sam",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 36,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 128,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 222,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 239,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 151,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 248,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 157,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rodgers",
+    "FirstName": "Aaron",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 18,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 239,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 312,
+    "Touchdowns": 3,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 186,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 257,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 354,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 34,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 330,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 113,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cohen",
+    "FirstName": "Tarik",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 21,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 180,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hogan",
+    "FirstName": "Kevin",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 140,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 225,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 290,
+    "Touchdowns": 3,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 61,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 283,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 124,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 241,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 252,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 246,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 268,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 171,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 128,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 376,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Osweiler",
+    "FirstName": "Brock",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 18,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 212,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 306,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 342,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 417,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 384,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 268,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 211,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 107,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 203,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kessler",
+    "FirstName": "Cody",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 121,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 114,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 331,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 87,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 330,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Lee",
+    "FirstName": "Marqise",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 200,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Palmer",
+    "FirstName": "Carson",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 122,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stanton",
+    "FirstName": "Drew",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 66,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 235,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 209,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Moore",
+    "FirstName": "Matt",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 188,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 138,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 186,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 188,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 234,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rush",
+    "FirstName": "Cooper",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 2,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 334,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 134,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 140,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 224,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 207,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 183,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 233,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 249,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 303,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 268,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Moore",
+    "FirstName": "Matt",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 176,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 101,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mallett",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 20,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 288,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 179,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 313,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 165,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 233,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 243,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 212,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 333,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 164,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 299,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 254,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 257,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 211,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 154,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 210,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Watson",
+    "FirstName": "Deshaun",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 402,
+    "Touchdowns": 4,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 452,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 143,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 263,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 317,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 423,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 198,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 202,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hill",
+    "FirstName": "Tyreek",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 285,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 140,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 261,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 218,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 68,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Winston",
+    "FirstName": "Jameis",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 67,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 263,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 311,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 220,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Geno",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Osweiler",
+    "FirstName": "Brock",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 208,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 199,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Foles",
+    "FirstName": "Nick",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 35,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 313,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 137,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 136,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 259,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 308,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 219,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stanton",
+    "FirstName": "Drew",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 201,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 247,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 297,
+    "Touchdowns": 2,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 263,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 249,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 300,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 311,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 361,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 245,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 238,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stanton",
+    "FirstName": "Drew",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 273,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 184,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Peterman",
+    "FirstName": "Nathan",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 79,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 56,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 212,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 297,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 232,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kessler",
+    "FirstName": "Cody",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 5,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 249,
+    "Touchdowns": 3,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 265,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 264,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 236,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 222,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 262,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 187,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 304,
+    "Touchdowns": 4,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 327,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 235,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 273,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 221,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 355,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 176,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 215,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 273,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 266,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hoyer",
+    "FirstName": "Brian",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 37,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Osweiler",
+    "FirstName": "Brock",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 221,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 213,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 254,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 306,
+    "Touchdowns": 1,
+    "Interceptions": 4
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Decker",
+    "FirstName": "Eric",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 299,
+    "Touchdowns": 4,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 299,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 179,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 154,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 179,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 183,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 239,
+    "Touchdowns": 0,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 275,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Moore",
+    "FirstName": "Matt",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 282,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cutler",
+    "FirstName": "Jay",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 83,
+    "Touchdowns": 1,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 225,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 280,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 322,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 385,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 230,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kelce",
+    "FirstName": "Travis",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 205,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Vereen",
+    "FirstName": "Shane",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Gabbert",
+    "FirstName": "Blaine",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 257,
+    "Touchdowns": 3,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 230,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 158,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Peterman",
+    "FirstName": "Nathan",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 66,
+    "Touchdowns": 0,
+    "Interceptions": 5
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 251,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Clemens",
+    "FirstName": "Kellen",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 33,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 154,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Osweiler",
+    "FirstName": "Brock",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 254,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 340,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 237,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 168,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 145,
+    "Touchdowns": 0,
+    "Interceptions": 3
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rush",
+    "FirstName": "Cooper",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 195,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 258,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Keenum",
+    "FirstName": "Case",
+    "TeamNameLong": "Minnesota",
+    "TeamNameShort": "Vikings",
+    "Yards": 282,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Stafford",
+    "FirstName": "Matthew",
+    "TeamNameLong": "Detroit",
+    "TeamNameShort": "Lions",
+    "Yards": 250,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Rivers",
+    "FirstName": "Philip",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Chargers",
+    "Yards": 434,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Prescott",
+    "FirstName": "Dak",
+    "TeamNameLong": "Dallas",
+    "TeamNameShort": "Cowboys",
+    "Yards": 179,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Manning",
+    "FirstName": "Eli",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Giants",
+    "Yards": 113,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Cousins",
+    "FirstName": "Kirk",
+    "TeamNameLong": "Washington",
+    "TeamNameShort": "Redskins",
+    "Yards": 242,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Fitzpatrick",
+    "FirstName": "Ryan",
+    "TeamNameLong": "Tampa Bay",
+    "TeamNameShort": "Buccaneers",
+    "Yards": 283,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Ryan",
+    "FirstName": "Matt",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 317,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Sanu",
+    "FirstName": "Mohamed",
+    "TeamNameLong": "Atlanta",
+    "TeamNameShort": "Falcons",
+    "Yards": 51,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kizer",
+    "FirstName": "DeShone",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 268,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kessler",
+    "FirstName": "Cody",
+    "TeamNameLong": "Cleveland",
+    "TeamNameShort": "Browns",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Dalton",
+    "FirstName": "Andy",
+    "TeamNameLong": "Cincinnati",
+    "TeamNameShort": "Bengals",
+    "Yards": 214,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Mariota",
+    "FirstName": "Marcus",
+    "TeamNameLong": "Tennessee",
+    "TeamNameShort": "Titans",
+    "Yards": 184,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brissett",
+    "FirstName": "Jacoby",
+    "TeamNameLong": "Indianapolis",
+    "TeamNameShort": "Colts",
+    "Yards": 196,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Taylor",
+    "FirstName": "Tyrod",
+    "TeamNameLong": "Buffalo",
+    "TeamNameShort": "Bills",
+    "Yards": 183,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Smith",
+    "FirstName": "Alex",
+    "TeamNameLong": "Kansas City",
+    "TeamNameShort": "Chiefs",
+    "Yards": 199,
+    "Touchdowns": 1,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Moore",
+    "FirstName": "Matt",
+    "TeamNameLong": "Miami",
+    "TeamNameShort": "Dolphins",
+    "Yards": 215,
+    "Touchdowns": 1,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brady",
+    "FirstName": "Tom",
+    "TeamNameLong": "New England",
+    "TeamNameShort": "Patriots",
+    "Yards": 227,
+    "Touchdowns": 4,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Newton",
+    "FirstName": "Cam",
+    "TeamNameLong": "Carolina",
+    "TeamNameShort": "Panthers",
+    "Yards": 168,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "McCown",
+    "FirstName": "Josh",
+    "TeamNameLong": "New York",
+    "TeamNameShort": "Jets",
+    "Yards": 307,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Trubisky",
+    "FirstName": "Mitchell",
+    "TeamNameLong": "Chicago",
+    "TeamNameShort": "Bears",
+    "Yards": 147,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wentz",
+    "FirstName": "Carson",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 227,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Foles",
+    "FirstName": "Nick",
+    "TeamNameLong": "Philadelphia",
+    "TeamNameShort": "Eagles",
+    "Yards": 21,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Wilson",
+    "FirstName": "Russell",
+    "TeamNameLong": "Seattle",
+    "TeamNameShort": "Seahawks",
+    "Yards": 228,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Garoppolo",
+    "FirstName": "Jimmy",
+    "TeamNameLong": "San Francisco",
+    "TeamNameShort": "49ers",
+    "Yards": 18,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Siemian",
+    "FirstName": "Trevor",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 149,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Lynch",
+    "FirstName": "Paxton",
+    "TeamNameLong": "Denver",
+    "TeamNameShort": "Broncos",
+    "Yards": 41,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Carr",
+    "FirstName": "Derek",
+    "TeamNameLong": "Oakland",
+    "TeamNameShort": "Raiders",
+    "Yards": 253,
+    "Touchdowns": 2,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Brees",
+    "FirstName": "Drew",
+    "TeamNameLong": "New Orleans",
+    "TeamNameShort": "Saints",
+    "Yards": 246,
+    "Touchdowns": 1,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Goff",
+    "FirstName": "Jared",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 354,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Kupp",
+    "FirstName": "Cooper",
+    "TeamNameLong": "Los Angeles",
+    "TeamNameShort": "Rams",
+    "Yards": 0,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Bortles",
+    "FirstName": "Blake",
+    "TeamNameLong": "Jacksonville",
+    "TeamNameShort": "Jaguars",
+    "Yards": 160,
+    "Touchdowns": 0,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Gabbert",
+    "FirstName": "Blaine",
+    "TeamNameLong": "Arizona",
+    "TeamNameShort": "Cardinals",
+    "Yards": 241,
+    "Touchdowns": 2,
+    "Interceptions": 1
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Hundley",
+    "FirstName": "Brett",
+    "TeamNameLong": "Green Bay",
+    "TeamNameShort": "Packers",
+    "Yards": 245,
+    "Touchdowns": 3,
+    "Interceptions": 0
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Roethlisberger",
+    "FirstName": "Ben",
+    "TeamNameLong": "Pittsburgh",
+    "TeamNameShort": "Steelers",
+    "Yards": 351,
+    "Touchdowns": 4,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Savage",
+    "FirstName": "Tom",
+    "TeamNameLong": "Houston",
+    "TeamNameShort": "Texans",
+    "Yards": 252,
+    "Touchdowns": 0,
+    "Interceptions": 2
+  },
+  {
+    "Score": 0.0,
+    "LastName": "Flacco",
+    "FirstName": "Joe",
+    "TeamNameLong": "Baltimore",
+    "TeamNameShort": "Ravens",
+    "Yards": 141,
+    "Touchdowns": 0,
+    "Interceptions": 0
+  }
+]

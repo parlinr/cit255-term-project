@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="testModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NFLOffensePassing">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="completions" Type="Int32" />
+    <Property Name="attempts" Type="Int32" />
+    <Property Name="yards" Type="Int32" />
+    <Property Name="averageYardsPerCompletion" Type="Double" />
+    <Property Name="touchdownPasses" Type="Int32" />
+    <Property Name="interceptionsThrown" Type="Int32" />
+    <Property Name="numberOfSacks" Type="Int32" />
+    <Property Name="yardsLostOnSacks" Type="Int32" />
+    <Property Name="qbr" Type="Double" />
+    <Property Name="passerRating" Type="Double" />
+    <Property Name="weekNumber" Type="Int32" />
+    <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="NFLOffenseReceiving">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="receptions" Type="Int32" />
+    <Property Name="yards" Type="Int32" />
+    <Property Name="averageYardsPerReception" Type="Double" />
+    <Property Name="touchdowns" Type="Int32" />
+    <Property Name="longestReception" Type="Double" />
+    <Property Name="targets" Type="Int32" />
+    <Property Name="weekNumber" Type="Int32" />
+    <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="NFLOffenseRushing">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="playerLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="playerFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameLong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teamNameShort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="awayOrHome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carries" Type="Int32" />
+    <Property Name="yards" Type="Int32" />
+    <Property Name="averageYardsPerCarry" Type="Double" />
+    <Property Name="touchdowns" Type="Int32" />
+    <Property Name="longestCarry" Type="Int32" />
+    <Property Name="weekNumber" Type="Int32" />
+    <Property Name="recordNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="testEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NFLOffensePassings" EntityType="Self.NFLOffensePassing" />
+    <EntitySet Name="NFLOffenseReceivings" EntityType="Self.NFLOffenseReceiving" />
+    <EntitySet Name="NFLOffenseRushings" EntityType="Self.NFLOffenseRushing" />
+  </EntityContainer>
+</Schema>

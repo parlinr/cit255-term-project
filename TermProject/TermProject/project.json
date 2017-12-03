@@ -1,6 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+    "Newtonsoft.Json": "10.0.3",
+    "System.ComponentModel.TypeConverter": "4.3.0",
     "System.Data.SqlClient": "4.4.0"
   },
   "frameworks": {

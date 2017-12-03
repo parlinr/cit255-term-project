@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="testModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NFLOffensePassing">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="date" />
+    <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+    <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+    <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+    <Property Name="completions" Type="int" />
+    <Property Name="attempts" Type="int" />
+    <Property Name="yards" Type="int" />
+    <Property Name="averageYardsPerCompletion" Type="float" />
+    <Property Name="touchdownPasses" Type="int" />
+    <Property Name="interceptionsThrown" Type="int" />
+    <Property Name="numberOfSacks" Type="int" />
+    <Property Name="yardsLostOnSacks" Type="int" />
+    <Property Name="qbr" Type="float" />
+    <Property Name="passerRating" Type="float" />
+    <Property Name="weekNumber" Type="int" />
+    <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NFLOffenseReceiving">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="date" />
+    <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+    <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+    <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+    <Property Name="receptions" Type="int" />
+    <Property Name="yards" Type="int" />
+    <Property Name="averageYardsPerReception" Type="float" />
+    <Property Name="touchdowns" Type="int" />
+    <Property Name="longestReception" Type="float" />
+    <Property Name="targets" Type="int" />
+    <Property Name="weekNumber" Type="int" />
+    <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NFLOffenseRushing">
+    <Key>
+      <PropertyRef Name="recordNumber" />
+    </Key>
+    <Property Name="date" Type="date" />
+    <Property Name="playerLastName" Type="varchar" MaxLength="50" />
+    <Property Name="playerFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameLong" Type="varchar" MaxLength="50" />
+    <Property Name="teamNameShort" Type="varchar" MaxLength="50" />
+    <Property Name="awayOrHome" Type="varchar" MaxLength="50" />
+    <Property Name="carries" Type="int" />
+    <Property Name="yards" Type="int" />
+    <Property Name="averageYardsPerCarry" Type="float" />
+    <Property Name="touchdowns" Type="int" />
+    <Property Name="longestCarry" Type="int" />
+    <Property Name="weekNumber" Type="int" />
+    <Property Name="recordNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="testModelStoreContainer">
+    <EntitySet Name="NFLOffensePassing" EntityType="Self.NFLOffensePassing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NFLOffenseReceiving" EntityType="Self.NFLOffenseReceiving" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NFLOffenseRushing" EntityType="Self.NFLOffenseRushing" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

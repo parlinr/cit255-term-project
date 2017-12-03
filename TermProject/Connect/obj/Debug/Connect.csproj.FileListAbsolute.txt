@@ -1,0 +1,8 @@
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\bin\Debug\Connect.exe.config
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\bin\Debug\Connect.exe
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\bin\Debug\Connect.pdb
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\obj\Debug\Connect.exe
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\obj\Debug\Connect.pdb
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\Connect\obj\Debug\Connect.csprojResolveAssemblyReference.cache

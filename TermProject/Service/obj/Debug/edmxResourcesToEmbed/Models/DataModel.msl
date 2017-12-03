@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="testModelStoreContainer" CdmEntityContainer="testEntities1">
+    <EntitySetMapping Name="NFLOffensePassings">
+      <EntityTypeMapping TypeName="testModel.NFLOffensePassing">
+        <MappingFragment StoreEntitySet="NFLOffensePassing">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+          <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+          <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+          <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+          <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+          <ScalarProperty Name="completions" ColumnName="completions" />
+          <ScalarProperty Name="attempts" ColumnName="attempts" />
+          <ScalarProperty Name="yards" ColumnName="yards" />
+          <ScalarProperty Name="averageYardsPerCompletion" ColumnName="averageYardsPerCompletion" />
+          <ScalarProperty Name="touchdownPasses" ColumnName="touchdownPasses" />
+          <ScalarProperty Name="interceptionsThrown" ColumnName="interceptionsThrown" />
+          <ScalarProperty Name="numberOfSacks" ColumnName="numberOfSacks" />
+          <ScalarProperty Name="yardsLostOnSacks" ColumnName="yardsLostOnSacks" />
+          <ScalarProperty Name="qbr" ColumnName="qbr" />
+          <ScalarProperty Name="passerRating" ColumnName="passerRating" />
+          <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+          <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NFLOffenseReceivings">
+      <EntityTypeMapping TypeName="testModel.NFLOffenseReceiving">
+        <MappingFragment StoreEntitySet="NFLOffenseReceiving">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+          <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+          <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+          <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+          <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+          <ScalarProperty Name="receptions" ColumnName="receptions" />
+          <ScalarProperty Name="yards" ColumnName="yards" />
+          <ScalarProperty Name="averageYardsPerReception" ColumnName="averageYardsPerReception" />
+          <ScalarProperty Name="touchdowns" ColumnName="touchdowns" />
+          <ScalarProperty Name="longestReception" ColumnName="longestReception" />
+          <ScalarProperty Name="targets" ColumnName="targets" />
+          <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+          <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NFLOffenseRushings">
+      <EntityTypeMapping TypeName="testModel.NFLOffenseRushing">
+        <MappingFragment StoreEntitySet="NFLOffenseRushing">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="playerLastName" ColumnName="playerLastName" />
+          <ScalarProperty Name="playerFirstName" ColumnName="playerFirstName" />
+          <ScalarProperty Name="teamNameLong" ColumnName="teamNameLong" />
+          <ScalarProperty Name="teamNameShort" ColumnName="teamNameShort" />
+          <ScalarProperty Name="awayOrHome" ColumnName="awayOrHome" />
+          <ScalarProperty Name="carries" ColumnName="carries" />
+          <ScalarProperty Name="yards" ColumnName="yards" />
+          <ScalarProperty Name="averageYardsPerCarry" ColumnName="averageYardsPerCarry" />
+          <ScalarProperty Name="touchdowns" ColumnName="touchdowns" />
+          <ScalarProperty Name="longestCarry" ColumnName="longestCarry" />
+          <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+          <ScalarProperty Name="recordNumber" ColumnName="recordNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

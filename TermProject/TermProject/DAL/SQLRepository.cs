@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Collections.Generic;
 using System.Threading;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+
 
 
 
@@ -50,10 +52,12 @@ namespace TermProject
             List<Passer> passers = new List<Passer>();
 
             string connString = GetConnectionString();
+            /*
             if (connString != null)
             {
                 throw new NotImplementedException();
             }
+            */
             string sqlCommandString = "SELECT * FROM dbo.NFLOffensePassing";
 
             using (SqlConnection sqlConn = new SqlConnection(connString))

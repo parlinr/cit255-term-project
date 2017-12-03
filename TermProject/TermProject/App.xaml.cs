@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Data.SqlClient;
+using System.ComponentModel;
+
 
 namespace TermProject
 {
