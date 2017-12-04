@@ -38,8 +38,9 @@ namespace TermProject
         {
             SQLRepository repo = new SQLRepository(Table.Passers);
             List<Passer> passers = new List<Passer>();
-            passers = repo.Passers;
+            passers = repo.ReadAllPassers();
 
+            /*
             ListView listView1 = new ListView();
             ObservableCollection<Passer> listViewItems = new ObservableCollection<Passer>();
             foreach (Passer p in passers)
@@ -48,6 +49,7 @@ namespace TermProject
             }
             listView1.ItemsSource = listViewItems;
             stackPanel1.Children.Add(listView1);
+            */
         }
     }
 }

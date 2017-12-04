@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="connString" xml:space="preserve">
-    <value>Server=tcp:parlinrtest.database.windows.net,1433;Initial Catalog=test;Persist Security Info=False;User ID=testadmin;Password=Whatthehell1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</value>
+    <value />
   </data>
 </root>

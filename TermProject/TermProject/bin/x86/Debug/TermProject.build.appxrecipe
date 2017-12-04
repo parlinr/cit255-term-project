@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>JB202-L04-W-D</Machine>
+    <Machine>JB214-L16-W-D</Machine>
     <WindowsUser>parlinr</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -28,8 +28,11 @@
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.Data.Sqlite\1.1.1\lib\netstandard1.3\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -69,6 +72,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Newtonsoft.Json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\runtime.any.System.Collections\4.3.0\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
@@ -154,6 +160,9 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\runtime.win7.System.Private.Uri\4.3.0\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\SQLite\3.13.0\runtimes\win10-x86\nativeassets\uap10.0\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.AppContext\4.3.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
@@ -181,6 +190,12 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.ComponentModel.EventBasedAsync\4.0.11\lib\netcore50\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.ComponentModel.Primitives\4.3.0\lib\netstandard1.0\System.ComponentModel.Primitives.dll">
+      <PackagePath>System.ComponentModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.ComponentModel.TypeConverter\4.3.0\lib\netstandard1.0\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>System.ComponentModel.TypeConverter.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Data.Common\4.3.0\lib\netstandard1.2\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
     </AppxPackagedFile>
@@ -196,7 +211,7 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Diagnostics.StackTrace\4.0.2\lib\netstandard1.3\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Dynamic.Runtime\4.0.11\lib\netcore50\System.Dynamic.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Dynamic.Runtime\4.3.0\lib\netcore50\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Globalization.Extensions\4.0.1\runtimes\win\lib\netstandard1.3\System.Globalization.Extensions.dll">
@@ -298,10 +313,13 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Numerics\4.3.0\lib\netcore50\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Serialization.Formatters\4.3.0\lib\netstandard1.4\System.Runtime.Serialization.Formatters.dll">
+      <PackagePath>System.Runtime.Serialization.Formatters.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Serialization.Json\4.0.3\lib\netcore50\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Serialization.Primitives\4.1.1\lib\netcore50\System.Runtime.Serialization.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Serialization.Primitives\4.3.0\lib\netcore50\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Runtime.Serialization.Xml\4.1.2\lib\netcore50\System.Runtime.Serialization.Xml.dll">
@@ -379,11 +397,17 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Xml.XDocument\4.3.0\lib\netcore50\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Xml.XmlDocument\4.0.1\lib\netstandard1.3\System.Xml.XmlDocument.dll">
+    <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Xml.XmlDocument\4.3.0\lib\netstandard1.3\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\test.json">
+      <PackagePath>test.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\sqliteDB.db">
+      <PackagePath>sqliteDB.db</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

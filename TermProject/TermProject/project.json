@@ -1,7 +1,10 @@
 ﻿{
   "dependencies": {
+    "Microsoft.Data.SQLite": "1.1.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
-    "System.Data.SqlClient": "4.4.0"
+    "Newtonsoft.Json": "10.0.3",
+    "System.Data.SqlClient": "4.4.0",
+    "System.Data.SQLite": "1.0.106"
   },
   "frameworks": {
     "uap10.0.10240": {}
