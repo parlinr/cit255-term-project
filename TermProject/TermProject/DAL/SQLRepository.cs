@@ -9,6 +9,8 @@ using Microsoft.Data.Sqlite;
 using System.IO;
 using Windows.Storage;
 using Newtonsoft.Json;
+using Windows.ApplicationModel.AppService;
+using Windows.Foundation.Collections;
 
 
 
@@ -17,21 +19,23 @@ namespace TermProject
     public class SQLRepository
     {
         #region FIELDS
-        private List<Passer> _passers = new List<Passer>(); 
+        protected List<Passer> _passers = new List<Passer>(); 
         private List<Rusher> _rushers = new List<Rusher>();
         private List<Receiver> _receivers = new List<Receiver>();
+        private AppServiceConnection sqlService;
         #endregion
 
         #region PROPERTIES
-        public List<Passer> Passers { get; }
-        public List<Receiver> Receivers { get; }
-        public List<Rusher> Rushers { get; }
+        public List<Passer> Passers { get; set; }
+        public List<Receiver> Receivers { get; set; }
+        public List<Rusher> Rushers { get; set; }
         #endregion
 
         #region CONSTRUCTORS
         //have this take a parameter indicating the table to access
         public SQLRepository(Table table)
         {
+            /*
             if (table == Table.Passers)
             {
                 _passers = ReadAllPassers();
@@ -44,7 +48,7 @@ namespace TermProject
             {
                 _rushers = ReadAllRushers();
             }
-                
+            */
         }
         #endregion
 
@@ -53,11 +57,15 @@ namespace TermProject
         {
             //SelectDatabase();
             //AddToDB();
-            string parentdir;
+           
             List<Passer> passers = new List<Passer>();
             List<int> nums = new List<int>();
+            GetPassersFromService();
+            
+            
             using (SqliteConnection db = new SqliteConnection("Filename=sqliteDB.db"))
             {
+                /*
                 db.Open();
                 string test = db.DataSource;
 
@@ -70,6 +78,7 @@ namespace TermProject
                 {
                     throw new NotImplementedException();
                 }
+                */
 
                 /*
                 string command = "SELECT * FROM NFLOffensePassing";
@@ -83,7 +92,7 @@ namespace TermProject
                 }
                 */
 
-                db.Close();
+                //db.Close();
             }
 
                 /*
@@ -207,7 +216,54 @@ namespace TermProject
                 db.Close();
             }
         }
-        
+
+        private async void GetPassersFromService()
+        {
+            int? testNum = null;
+            // Add the connection.
+            if (this.sqlService == null)
+            {
+                this.sqlService = new AppServiceConnection();
+
+                // Here, we use the app service name defined in the app service provider's Package.appxmanifest file in the <Extension> section.
+                this.sqlService.AppServiceName = "com.ryanparlin.termproject";
+
+                // Use Windows.ApplicationModel.Package.Current.Id.FamilyName within the app service provider to get this value.
+                this.sqlService.PackageFamilyName = "20978b91-37f8-4466-b037-7bc8e441639c_2vvt8rbymf9fe";
+
+                var status = await this.sqlService.OpenAsync();
+                if (status != AppServiceConnectionStatus.Success)
+                {
+                    //textBox.Text = "Failed to connect";
+                    //return;
+                }
+            }
+
+            //call service
+            var message = new ValueSet();
+            message.Add("Command", "test");
+            AppServiceResponse response = await this.sqlService.SendMessageAsync(message);
+            string result = "";
+
+            if (response.Status == AppServiceResponseStatus.Success)
+            {
+                // Get the data  that the service sent  to us.
+                if (response.Message["Status"] as string == "OK")
+                {
+                    testNum = response.Message["Result"] as int?;
+                }
+            }
+
+            if (testNum!= null)
+            {
+                throw new NotImplementedException();
+            }
+            else
+            {
+                throw new FileNotFoundException();
+            }
+        }
+
         #endregion
     }
 }
