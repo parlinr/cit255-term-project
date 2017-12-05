@@ -17,3 +17,4 @@ C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\obj\x86\Debu
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\obj\x86\Debug\qualifiers.txt
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\obj\x86\Debug\SQLService.csprojResolveAssemblyReference.cache

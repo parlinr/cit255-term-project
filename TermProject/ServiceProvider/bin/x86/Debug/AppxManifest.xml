@@ -40,6 +40,7 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>CLRHost.dll</Path>
+        <ActivatableClass ActivatableClassId="SQLService.Passer" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="SQLService.AccessLayer" ThreadingModel="both" />
       </InProcessServer>
     </Extension>

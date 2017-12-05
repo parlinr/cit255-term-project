@@ -220,6 +220,8 @@ namespace TermProject
         private async void GetPassersFromService()
         {
             int? testNum = null;
+            string testString = "";
+            List<Passer> testList = new List<Passer>();
             // Add the connection.
             if (this.sqlService == null)
             {
@@ -243,7 +245,7 @@ namespace TermProject
             var message = new ValueSet();
             message.Add("Command", "test");
             AppServiceResponse response = await this.sqlService.SendMessageAsync(message);
-            string result = "";
+            
 
             if (response.Status == AppServiceResponseStatus.Success)
             {
@@ -254,7 +256,8 @@ namespace TermProject
                 }
             }
 
-            if (testNum!= null)
+            
+            if (testNum != null)
             {
                 throw new NotImplementedException();
             }
@@ -262,6 +265,7 @@ namespace TermProject
             {
                 throw new FileNotFoundException();
             }
+            
         }
 
         #endregion

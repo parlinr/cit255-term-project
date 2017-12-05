@@ -42,6 +42,7 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>ServiceProvider.exe</Path>
+        <ActivatableClass ActivatableClassId="SQLService.Passer" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="SQLService.AccessLayer" ThreadingModel="both" />
       </InProcessServer>
     </Extension>

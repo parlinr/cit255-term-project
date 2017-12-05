@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel.AppService;
 using Windows.ApplicationModel.Background;
 using Windows.Foundation.Collections;
+using System.Data.SqlClient;
+using Windows.ApplicationModel.Resources;
+
 
 namespace SQLService
 {
@@ -31,23 +34,77 @@ namespace SQLService
 
             // Get a deferral because we use an awaitable API below to respond to the message
             // and we don't want this call to get cancelled while we are waiting.
+            
             var messageDeferral = args.GetDeferral();
 
+                
+
+            
+            ResourceLoader resourceLoader = new ResourceLoader();
             ValueSet message = args.Request.Message;
             ValueSet returnData = new ValueSet();
+            int? testNum = null;
+            List<Passer> testResult = new List<Passer>();
 
             string command = message["Command"] as string;
 
             switch(command)
             {
                 case "test":
-                    returnData.Add("Result", 5);
+                    
+                    
+                    string connString = resourceLoader.GetString("connString");
+                    string sqlCommandString = "SELECT * FROM dbo.NFLOffensePassing";
+
+                    using (SqlConnection sqlConn = new SqlConnection(connString))
+                    using (SqlCommand sqlCommand = new SqlCommand(sqlCommandString, sqlConn))
+                    {
+                        try
+                        {
+                            sqlConn.Open();
+                            
+                            
+                            using (SqlDataReader reader = sqlCommand.ExecuteReader())
+                            {
+                                    
+                                    while (reader.Read())
+                                    {
+                                        Passer p = new Passer();
+                                        p.FirstName = reader["playerFirstName"].ToString();
+                                        p.LastName = reader["playerLastName"].ToString();
+                                        p.Interceptions = Convert.ToInt32(reader["interceptionsThrown"]);
+                                        p.TeamNameLong = reader["teamNameLong"].ToString();
+                                        p.TeamNameShort = reader["teamNameShort"].ToString();
+                                        p.Touchdowns = Convert.ToInt32(reader["touchdownPasses"]);
+                                        p.Yards = Convert.ToInt32(reader["yards"]);
+                                        testResult.Add(p);
+                                    }
+                                
+                                
+                            }
+                            
+                        }
+                        catch (Exception e)
+                        {
+
+                        }
+                    }
+
+                    testNum = testResult.ElementAt(25).Interceptions;
+                    returnData.Add("Result", testNum);
                     returnData.Add("Status", "OK");
+
+                       
                     break;
                 default:
                     break;
+                
             }
 
+            if (testResult.Count != 0)
+            {
+                throw new NotImplementedException();
+            }
             //return data
             try
             {
