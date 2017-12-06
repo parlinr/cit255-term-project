@@ -35,7 +35,7 @@ namespace TermProject
             this.InitializeComponent();
             JSONRepository repo = new JSONRepository();
             repo.GetAllPassers();
-            repo.InsertPasser(p);
+            //repo.InsertPasser(p);
             Passers = repo.AllPassers;
 
         }
