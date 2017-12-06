@@ -476,6 +476,6 @@ C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\q
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\passers.json
-C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\receivers.json
-C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\rushers.json
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Assets\passers.json
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Assets\receivers.json
+C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Assets\rushers.json

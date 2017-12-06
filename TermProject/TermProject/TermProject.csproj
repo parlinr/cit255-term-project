@@ -103,15 +103,15 @@
     <None Include="Connected Services\WcfService\TermProject.WcfService.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="passers.json">
+    <Content Include="Assets\passers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="receivers.json">
+    </Content>
+    <Content Include="Assets\receivers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="rushers.json">
+    </Content>
+    <Content Include="Assets\rushers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="project.json" />
     <None Include="Connected Services\WcfService\Service1.disco" />
     <None Include="Connected Services\WcfService\configuration91.svcinfo" />
@@ -133,6 +133,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\JSONRepository.cs" />
     <Compile Include="Models\TableEnum.cs" />
     <Compile Include="MainPage.xaml.cs">

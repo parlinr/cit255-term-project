@@ -31,9 +31,11 @@ namespace TermProject
 
         public PasserPage()
         {
+            Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
             this.InitializeComponent();
             JSONRepository repo = new JSONRepository();
             repo.GetAllPassers();
+            repo.InsertPasser(p);
             Passers = repo.AllPassers;
 
         }

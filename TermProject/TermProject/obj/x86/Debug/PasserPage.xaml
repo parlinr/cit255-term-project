@@ -19,6 +19,7 @@
                 <TextBlock x:ConnectionId='8'                      />
                 <TextBlock x:ConnectionId='9'                           />
                 <TextBlock x:ConnectionId='10'                              />
+                <TextBlock x:ConnectionId='11'                             />
             </StackPanel>
         </DataTemplate>
     </Page.Resources>
@@ -37,7 +38,7 @@
         </Grid.RowDefinitions>
 
         
-            <ListView x:ConnectionId='11'                                 ItemTemplate="{StaticResource PasserListDataTemplate}">
+            <ListView x:ConnectionId='12'                                 ItemTemplate="{StaticResource PasserListDataTemplate}">
                 
             </ListView>
         

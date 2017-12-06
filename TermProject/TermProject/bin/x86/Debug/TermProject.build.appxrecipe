@@ -403,6 +403,15 @@
     <AppxPackagedFile Include="C:\Users\RCP\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\passers.json">
+      <PackagePath>Assets\passers.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\receivers.json">
+      <PackagePath>Assets\receivers.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\rushers.json">
+      <PackagePath>Assets\rushers.json</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\test.json">
       <PackagePath>test.json</PackagePath>
     </AppxPackagedFile>

@@ -16,6 +16,7 @@ namespace TermProject
         private string _teamNameShort;
         private int _yards;
         private int _touchdowns;
+        private int _recordNumber;
         
         #endregion
 
@@ -27,6 +28,7 @@ namespace TermProject
         public string TeamNameShort { get; set; }
         public int Yards { get; set; }
         public int Touchdowns { get; set; }
+        public int RecordNumber { get; set; }
         
 
         #endregion

@@ -19,6 +19,7 @@
                 <TextBlock Text="{x:Bind Yards}"/>
                 <TextBlock Text="{x:Bind Touchdowns}"/>
                 <TextBlock Text="{x:Bind Interceptions}"/>
+                <TextBlock Text="{x:Bind RecordNumber}"/>
             </StackPanel>
         </DataTemplate>
     </Page.Resources>

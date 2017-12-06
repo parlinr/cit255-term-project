@@ -271,6 +271,7 @@ namespace TermProject.TermProject_XamlTypeInfo
                 userType.AddMemberName("Yards");
                 userType.AddMemberName("Touchdowns");
                 userType.AddMemberName("Interceptions");
+                userType.AddMemberName("RecordNumber");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -381,6 +382,16 @@ namespace TermProject.TermProject_XamlTypeInfo
             var that = (global::TermProject.Passer)instance;
             that.Interceptions = (global::System.Int32)Value;
         }
+        private object get_9_Passer_RecordNumber(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.RecordNumber;
+        }
+        private void set_9_Passer_RecordNumber(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.RecordNumber = (global::System.Int32)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -442,6 +453,12 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Interceptions", "Int32");
                 xamlMember.Getter = get_8_Passer_Interceptions;
                 xamlMember.Setter = set_8_Passer_Interceptions;
+                break;
+            case "TermProject.Passer.RecordNumber":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "RecordNumber", "Int32");
+                xamlMember.Getter = get_9_Passer_RecordNumber;
+                xamlMember.Setter = set_9_Passer_RecordNumber;
                 break;
             }
             return xamlMember;

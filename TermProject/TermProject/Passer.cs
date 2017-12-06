@@ -17,6 +17,7 @@ namespace TermProject
         private int _yards;
         private int _touchdowns;
         private int _interceptions;
+        private int _recordNumber;
         #endregion
 
         #region PROPERTIES
@@ -28,6 +29,7 @@ namespace TermProject
         public int Yards { get; set; }
         public int Touchdowns { get; set; }
         public int Interceptions { get; set; }
+        public int RecordNumber { get; set; }
 
 
         #endregion
