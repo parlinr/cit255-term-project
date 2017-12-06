@@ -1,2 +1,0 @@
-C:\Users\parlinr\Desktop\cit255-term-project\TermProject\ServiceProvider\ServiceProvider.csproj;x86
-C:\Users\parlinr\Desktop\cit255-term-project\TermProject\SQLService\SQLService.csproj;x86

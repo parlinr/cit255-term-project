@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.AppService;
+using System.ServiceModel;
+using System.Collections.ObjectModel;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,33 +27,23 @@ namespace TermProject
     /// </summary>
     public sealed partial class PasserPage : Page
     {
+        public ObservableCollection<Passer> Passers { get; set; }
+
         public PasserPage()
         {
             this.InitializeComponent();
+            JSONRepository repo = new JSONRepository();
+            repo.GetAllPassers();
+            Passers = repo.AllPassers;
+
         }
 
         private void PasserPage_Loaded(object sender, RoutedEventArgs e)
         {
-            ListPassers();
-
+            
+           
         }
 
-        public void ListPassers()
-        {
-            SQLRepository repo = new SQLRepository(Table.Passers);
-            List<Passer> passers = new List<Passer>();
-            passers = repo.ReadAllPassers();
-
-            /*
-            ListView listView1 = new ListView();
-            ObservableCollection<Passer> listViewItems = new ObservableCollection<Passer>();
-            foreach (Passer p in passers)
-            {
-                listViewItems.Add(p);
-            }
-            listView1.ItemsSource = listViewItems;
-            stackPanel1.Children.Add(listView1);
-            */
-        }
+        
     }
 }

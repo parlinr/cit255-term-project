@@ -5,13 +5,42 @@
     xmlns:local="using:TermProject"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:TermProject"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <DataTemplate x:Key="PasserListDataTemplate" x:DataType="data:Passer">
+            <StackPanel>
+                <TextBlock Text="{x:Bind Score}"/>
+                <TextBlock Text="{x:Bind LastName}"/>
+                <TextBlock Text="{x:Bind FirstName}"/>
+                <TextBlock Text="{x:Bind TeamNameLong}"/>
+                <TextBlock Text="{x:Bind TeamNameShort}"/>
+                <TextBlock Text="{x:Bind Yards}"/>
+                <TextBlock Text="{x:Bind Touchdowns}"/>
+                <TextBlock Text="{x:Bind Interceptions}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--
         <TextBlock>Lorem Ipsum</TextBlock>
         <StackPanel Name="stackPanel1" Loaded="PasserPage_Loaded">
-            
-            
+                    
         </StackPanel>
+        -->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        
+            <ListView  ItemsSource="{x:Bind Passers}" ItemTemplate="{StaticResource PasserListDataTemplate}">
+                
+            </ListView>
+        
+
     </Grid>
 </Page>

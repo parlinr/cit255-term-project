@@ -132,17 +132,31 @@ namespace TermProject.TermProject_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "TermProject.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "TermProject.PasserPage";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<TermProject.Passer>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<TermProject.Passer>";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "TermProject.Passer";
+            _typeNameTable[8] = "Double";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Int32";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::TermProject.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::TermProject.PasserPage);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Passer>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::TermProject.Passer>);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::TermProject.Passer);
+            _typeTable[8] = typeof(global::System.Double);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,6 +193,21 @@ namespace TermProject.TermProject_XamlTypeInfo
 
         private object Activate_0_MainPage() { return new global::TermProject.MainPage(); }
         private object Activate_3_PasserPage() { return new global::TermProject.PasserPage(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Passer>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TermProject.Passer>(); }
+        private object Activate_7_Passer() { return new global::TermProject.Passer(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
+            var newItem = (global::TermProject.Passer)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_5_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
+            var newItem = (global::TermProject.Passer)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,19 +237,213 @@ namespace TermProject.TermProject_XamlTypeInfo
             case 3:   //  TermProject.PasserPage
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_PasserPage;
+                userType.AddMemberName("Passers");
                 userType.SetIsLocalType();
                 xamlType = userType;
+                break;
+
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<TermProject.Passer>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<TermProject.Passer>"));
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.Collections.ObjectModel.Collection`1<TermProject.Passer>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
+                xamlType = userType;
+                break;
+
+            case 6:   //  Object
+                xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  TermProject.Passer
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_Passer;
+                userType.AddMemberName("Score");
+                userType.AddMemberName("LastName");
+                userType.AddMemberName("FirstName");
+                userType.AddMemberName("TeamNameLong");
+                userType.AddMemberName("TeamNameShort");
+                userType.AddMemberName("Yards");
+                userType.AddMemberName("Touchdowns");
+                userType.AddMemberName("Interceptions");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Double
+                xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  String
+                xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Int32
+                xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
         }
 
 
+        private object get_0_PasserPage_Passers(object instance)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            return that.Passers;
+        }
+        private void set_0_PasserPage_Passers(object instance, object Value)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            that.Passers = (global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Passer>)Value;
+        }
+        private object get_1_Passer_Score(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.Score;
+        }
+        private void set_1_Passer_Score(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.Score = (global::System.Double)Value;
+        }
+        private object get_2_Passer_LastName(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.LastName;
+        }
+        private void set_2_Passer_LastName(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.LastName = (global::System.String)Value;
+        }
+        private object get_3_Passer_FirstName(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.FirstName;
+        }
+        private void set_3_Passer_FirstName(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.FirstName = (global::System.String)Value;
+        }
+        private object get_4_Passer_TeamNameLong(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.TeamNameLong;
+        }
+        private void set_4_Passer_TeamNameLong(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.TeamNameLong = (global::System.String)Value;
+        }
+        private object get_5_Passer_TeamNameShort(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.TeamNameShort;
+        }
+        private void set_5_Passer_TeamNameShort(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.TeamNameShort = (global::System.String)Value;
+        }
+        private object get_6_Passer_Yards(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.Yards;
+        }
+        private void set_6_Passer_Yards(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.Yards = (global::System.Int32)Value;
+        }
+        private object get_7_Passer_Touchdowns(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.Touchdowns;
+        }
+        private void set_7_Passer_Touchdowns(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.Touchdowns = (global::System.Int32)Value;
+        }
+        private object get_8_Passer_Interceptions(object instance)
+        {
+            var that = (global::TermProject.Passer)instance;
+            return that.Interceptions;
+        }
+        private void set_8_Passer_Interceptions(object instance, object Value)
+        {
+            var that = (global::TermProject.Passer)instance;
+            that.Interceptions = (global::System.Int32)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::TermProject.TermProject_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::TermProject.TermProject_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "TermProject.PasserPage.Passers":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.PasserPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Passers", "System.Collections.ObjectModel.ObservableCollection`1<TermProject.Passer>");
+                xamlMember.Getter = get_0_PasserPage_Passers;
+                xamlMember.Setter = set_0_PasserPage_Passers;
+                break;
+            case "TermProject.Passer.Score":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Score", "Double");
+                xamlMember.Getter = get_1_Passer_Score;
+                xamlMember.Setter = set_1_Passer_Score;
+                break;
+            case "TermProject.Passer.LastName":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "LastName", "String");
+                xamlMember.Getter = get_2_Passer_LastName;
+                xamlMember.Setter = set_2_Passer_LastName;
+                break;
+            case "TermProject.Passer.FirstName":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "FirstName", "String");
+                xamlMember.Getter = get_3_Passer_FirstName;
+                xamlMember.Setter = set_3_Passer_FirstName;
+                break;
+            case "TermProject.Passer.TeamNameLong":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "TeamNameLong", "String");
+                xamlMember.Getter = get_4_Passer_TeamNameLong;
+                xamlMember.Setter = set_4_Passer_TeamNameLong;
+                break;
+            case "TermProject.Passer.TeamNameShort":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "TeamNameShort", "String");
+                xamlMember.Getter = get_5_Passer_TeamNameShort;
+                xamlMember.Setter = set_5_Passer_TeamNameShort;
+                break;
+            case "TermProject.Passer.Yards":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Yards", "Int32");
+                xamlMember.Getter = get_6_Passer_Yards;
+                xamlMember.Setter = set_6_Passer_Yards;
+                break;
+            case "TermProject.Passer.Touchdowns":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Touchdowns", "Int32");
+                xamlMember.Getter = get_7_Passer_Touchdowns;
+                xamlMember.Setter = set_7_Passer_Touchdowns;
+                break;
+            case "TermProject.Passer.Interceptions":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Passer");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Interceptions", "Int32");
+                xamlMember.Getter = get_8_Passer_Interceptions;
+                xamlMember.Setter = set_8_Passer_Interceptions;
+                break;
+            }
             return xamlMember;
         }
     }
