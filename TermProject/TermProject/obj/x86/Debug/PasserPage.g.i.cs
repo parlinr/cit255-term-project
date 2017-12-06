@@ -15,8 +15,6 @@ namespace TermProject
 
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.StackPanel stackPanel1; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
         private bool _contentLoaded;
 
         /// <summary>
@@ -35,6 +33,16 @@ namespace TermProject
             global::Windows.UI.Xaml.Application.LoadComponent(this, resourceLocator, global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
         }
 
+        
+        private interface IPasserPage_Bindings
+        {
+            void Initialize();
+            void Update();
+            void StopTracking();
+        }
+#pragma warning disable 0169    //  Proactively suppress unused field warning in case Bindings is not used.
+        private IPasserPage_Bindings Bindings;
+#pragma warning restore 0169
     }
 }
 
