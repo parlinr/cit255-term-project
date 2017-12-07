@@ -25183,12 +25183,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\parlinr\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
+      "projectUniqueName": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
       "projectName": "TermProject",
-      "projectPath": "C:\\Users\\parlinr\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
-      "projectJsonPath": "C:\\Users\\parlinr\\cit255-term-project\\TermProject\\TermProject\\project.json",
+      "projectPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
+      "projectJsonPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\project.json",
       "packagesPath": "C:\\Users\\parlinr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parlinr\\cit255-term-project\\TermProject\\TermProject\\obj\\",
+      "outputPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\parlinr\\AppData\\Roaming\\NuGet\\NuGet.Config",

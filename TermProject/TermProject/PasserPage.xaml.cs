@@ -37,7 +37,9 @@ namespace TermProject
             repo.GetAllPassers();
             //repo.GetAllRushers();
             //repo.InsertPasser(p);
-            repo.GetAllReceivers();
+            //repo.GetAllReceivers();
+            //repo.SelectByRecordNumber(10000, Table.Passers);
+            repo.InsertPasser(p);
             Passers = repo.AllPassers;
 
         }

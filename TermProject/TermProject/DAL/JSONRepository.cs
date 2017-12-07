@@ -13,6 +13,9 @@ namespace TermProject
 {
     public class JSONRepository : IRepository
     {
+        //we need a byte count for adding on to the end of files
+        public int FileLength { get; set; }
+
         //With UWP's subset of .NET, we cannot have: 1) return types, or 2) out or
         //ref keywords in async methods (required for file IO in UWP). Intermediary
         //properties will have to do.
@@ -132,17 +135,24 @@ namespace TermProject
             string jsonText = "";
             if (table == Table.Passers)
             {
-                ext = @"Assets\passers.json";
+                ext = @"\passers.json";
+                TransferToStorage("passers.json");
             }
             else if (table == Table.Receivers)
             {
-                ext = @"Assets\receivers.json";
+                ext = @"\receivers.json";
+                TransferToStorage("receivers.json");
             }
             else if (table == Table.Rushers)
             {
-                ext = @"Assets\rushers.json";
+                ext = @"\rushers.json";
+                TransferToStorage("rushers.json");
             }
-            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, ext);
+
+            //string pth = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, ext);
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string pth = root + ext;
             Windows.Storage.StorageFile File = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
 
             //build the stream and write it to a string
@@ -195,24 +205,88 @@ namespace TermProject
         public async void InsertPasser(Passer p)
         {
             //get the file
-            var passerFile = @"Assets\passers.json";
-            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, passerFile);
+            TransferToStorage("passers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string comma = ",";
+            string rightBracket = "]";
+            var pth = root + "\\passers.json";
             Windows.Storage.StorageFile passersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
 
             string jsonText = JsonConvert.SerializeObject(p, Formatting.Indented);
 
             //write to the file
             var stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
-            using (var outputStream = stream.GetOutputStreamAt(0))
+            using (var outputStream = stream.GetOutputStreamAt(stream.Size - 1))
             {
                 using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
                 {
+                    dataWriter.WriteString(comma);
                     dataWriter.WriteString(jsonText);
+                    dataWriter.WriteString(rightBracket);
                     await dataWriter.StoreAsync();
                     await outputStream.FlushAsync();
                 }
             }
-            stream.Dispose(); // Or use the stream variable (see previous code snippet) with a using statement as well.
+            stream.Dispose(); 
+        }
+
+        public async void InsertRusher(Rusher r)
+        {
+            //get the file
+            TransferToStorage("rushers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string comma = ",";
+            string rightBracket = "]";
+            var pth = root + "\\rushers.json";
+            Windows.Storage.StorageFile rushersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            string jsonText = JsonConvert.SerializeObject(r, Formatting.Indented);
+
+            //write to the file
+            var stream = await rushersFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(stream.Size - 1))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    dataWriter.WriteString(comma);
+                    dataWriter.WriteString(jsonText);
+                    dataWriter.WriteString(rightBracket);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose(); 
+        }
+
+        public async void InsertReceiver(Receiver r)
+        {
+            //get the file
+            TransferToStorage("receivers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string comma = ",";
+            string rightBracket = "]";
+            var pth = root + "\\receivers.json";
+            Windows.Storage.StorageFile receiversFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            string jsonText = JsonConvert.SerializeObject(r, Formatting.Indented);
+
+            //write to the file
+            var stream = await receiversFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(stream.Size - 1))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    dataWriter.WriteString(comma);
+                    dataWriter.WriteString(jsonText);
+                    dataWriter.WriteString(rightBracket);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose();
         }
 
         private async void TransferToStorage(string file)

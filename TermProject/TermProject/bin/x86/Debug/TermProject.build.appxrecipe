@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>JB214-L20-W-D</Machine>
+    <Machine>JB202-L04-W-D</Machine>
     <WindowsUser>parlinr</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>772e3bb6-64a3-4960-90b8-5bf26d17d94f</PackageIdentityName>
     <PackageIdentityPublisher>CN=parlinr</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\parlinr\cit255-term-project\TermProject\TermProject\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -403,59 +403,59 @@
     <AppxPackagedFile Include="C:\Users\parlinr\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\passers.json">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\passers.json">
       <PackagePath>Assets\passers.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\receivers.json">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\receivers.json">
       <PackagePath>Assets\receivers.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\rushers.json">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\rushers.json">
       <PackagePath>Assets\rushers.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\test.json">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\test.json">
       <PackagePath>test.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.xr.xml">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.xr.xml">
       <PackagePath>TermProject.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parlinr\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
+    <AppxPackagedFile Include="C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
       <PackagePath>TermProject.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
