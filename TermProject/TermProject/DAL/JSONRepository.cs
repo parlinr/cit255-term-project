@@ -8,6 +8,7 @@ using System.IO;
 using System.Collections.ObjectModel;
 using Windows.Storage;
 
+
 namespace TermProject
 {
     public class JSONRepository : IRepository
@@ -27,12 +28,16 @@ namespace TermProject
             List<Passer> passers = new List<Passer>();
             string jsonText;
 
+            //copy JSON file to AppData folder if it doesn't already exist
+            TransferToStorage("passers.json");
+
+
+
             //specify where the target (JSON) file is
-            //Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            //Windows.Storage.StorageFile passersFile = await storageFolder.GetFileAsync("ms-appx:///passers.json");
-            //Windows.Storage.StorageFile passersFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("Assets\\passers.json");
-            var passerFile = @"Assets\passers.json";
-            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, passerFile);
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\passers.json";
+            //string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, passerFile);
             Windows.Storage.StorageFile passersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
 
             //build the stream and write it to a string
@@ -58,12 +63,12 @@ namespace TermProject
             List<Rusher> rushers = new List<Rusher>();
             string jsonText;
 
+            TransferToStorage("rushers.json");
             //specify where the target (JSON) file is
-            //Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            //Windows.Storage.StorageFile passersFile = await storageFolder.GetFileAsync("ms-appx:///passers.json");
-            //Windows.Storage.StorageFile passersFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("Assets\\passers.json");
-            var rusherFile = @"Assets\rushers.json";
-            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, rusherFile);
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\rushers.json";
+                  
             Windows.Storage.StorageFile rushersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
 
             //build the stream and write it to a string
@@ -90,11 +95,11 @@ namespace TermProject
             string jsonText;
 
             //specify where the target (JSON) file is
-            //Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            //Windows.Storage.StorageFile passersFile = await storageFolder.GetFileAsync("ms-appx:///passers.json");
-            //Windows.Storage.StorageFile passersFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("Assets\\passers.json");
-            var receiverFile = @"Assets\receivers.json";
-            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, receiverFile);
+            TransferToStorage("receivers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\receivers.json";
+
             Windows.Storage.StorageFile receiversFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
 
             //build the stream and write it to a string
@@ -208,6 +213,35 @@ namespace TermProject
                 }
             }
             stream.Dispose(); // Or use the stream variable (see previous code snippet) with a using statement as well.
+        }
+
+        private async void TransferToStorage(string file)
+        {
+            //from https://stackoverflow.com/questions/26940802/copy-file-from-app-installation-folder-to-local-storage
+
+            //has file been copied already?
+            try
+            {
+                await ApplicationData.Current.LocalFolder.GetFileAsync(file);
+                //no exception means file already exists
+                return;
+            }
+            catch (FileNotFoundException e)
+            {
+                //file does not exist if this exception is caught
+                
+                
+            }
+            //I get exceptions when I attempt to run the below in a catch block (especially the task)
+            //This is where the file is copied to the ApplicationData location (where the app has read and write permissions,
+            //as opposed to the install directory, where it only has read permissions
+            var ext = @"Assets\" + file;
+            string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, ext);
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var t = Task.Run(() => File.Copy(pth, root + "\\" + file));
+            t.Wait();
+         
         }
 
         public void Dispose()
