@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     "UAP,Version=v10.0.10240": {
       "Microsoft.CSharp/4.3.0": {
@@ -5930,6 +5930,9 @@
       },
       "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
+        "compile": {
+          "runtimes/win10-arm-aot/lib/netcore50/_._": {}
+        },
         "runtime": {
           "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -11132,6 +11135,9 @@
       },
       "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
+        "compile": {
+          "runtimes/win10-x64-aot/lib/netcore50/_._": {}
+        },
         "runtime": {
           "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -16340,6 +16346,9 @@
       },
       "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
+        "compile": {
+          "runtimes/win10-x86-aot/lib/netcore50/_._": {}
+        },
         "runtime": {
           "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -25179,25 +25188,15 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\parlinr\\.nuget\\packages\\": {}
+    "C:\\Users\\RCP\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
+      "projectUniqueName": "C:\\Users\\RCP\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
       "projectName": "TermProject",
-      "projectPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
-      "projectJsonPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\project.json",
-      "packagesPath": "C:\\Users\\parlinr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parlinr\\Desktop\\cit255-term-project\\TermProject\\TermProject\\obj\\",
-      "projectStyle": "ProjectJson",
-      "configFilePaths": [
-        "C:\\Users\\parlinr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
-      }
+      "projectPath": "C:\\Users\\RCP\\Desktop\\cit255-term-project\\TermProject\\TermProject\\TermProject.csproj",
+      "projectJsonPath": "C:\\Users\\RCP\\Desktop\\cit255-term-project\\TermProject\\TermProject\\project.json",
+      "projectStyle": "ProjectJson"
     },
     "dependencies": {
       "Microsoft.Data.SQLite": "1.1.1",

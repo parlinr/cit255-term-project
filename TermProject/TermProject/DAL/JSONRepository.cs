@@ -318,6 +318,182 @@ namespace TermProject
          
         }
 
+        public async void UpdatePassers()
+        {
+
+        }
+
+        public async void Delete(Table table, int recordNumber)
+        {
+            string ext = "";
+            string jsonText = "";
+            List<Passer> passers = new List<Passer>();
+            List<Receiver> receivers = new List<Receiver>();
+            List<Rusher> rushers = new List<Rusher>();
+
+            if (table == Table.Passers)
+            {
+                TransferToStorage("passers.json");
+                ext = "\\passers.json";
+            }
+            else if (table == Table.Receivers)
+            {
+                TransferToStorage("receivers.json");
+                ext = "\\receivers.json";
+            }
+            else
+            {
+                TransferToStorage("rushers.json");
+                ext = "\\rushers.json";
+            }
+            
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string filePath = root + ext;
+            Windows.Storage.StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(filePath);
+
+            //build the stream and write it to a string
+            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            if (table == Table.Passers)
+            {
+                Passer passerToDelete = new Passer();
+                passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+
+                //yes, I know this takes time O(n) ....
+                foreach (Passer p in passers)
+                {
+                    
+                    if (p.RecordNumber == recordNumber)
+                    {
+                        //if such a record is found, mark it for deletion
+                        passerToDelete = p;
+                        
+                    }
+
+                }
+
+                //delete the marked record
+                passers.Remove(passerToDelete);
+
+                jsonText = JsonConvert.SerializeObject(passers, Formatting.Indented);
+
+                //overwrite the file
+                File.WriteAllText(filePath, "");
+
+                //write the modified list to the file
+                var passersStream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+                using (var outputStream = passersStream.GetOutputStreamAt(0))
+                {
+                    using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                    {
+                        
+                        
+                        dataWriter.WriteString(jsonText);
+                        await dataWriter.StoreAsync();
+                        await outputStream.FlushAsync();
+                    }
+                }
+                stream.Dispose();
+
+            }
+            else if (table == Table.Receivers)
+            {
+                //serialize the string
+                Receiver receiverToDelete = new Receiver();
+                receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
+
+                //yes, I know this takes time O(n) ....
+                foreach (Receiver r in receivers)
+                {
+
+                    if (r.RecordNumber == recordNumber)
+                    {
+                        //if such a record is found, mark it for deletion
+                        receiverToDelete = r;
+
+                    }
+
+                }
+
+                //delete the marked record
+                receivers.Remove(receiverToDelete);
+
+                jsonText = JsonConvert.SerializeObject(receivers, Formatting.Indented);
+
+                //overwrite the file
+                File.WriteAllText(filePath, "");
+
+                //write the modified list to the file
+                var receiversStream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+                using (var outputStream = receiversStream.GetOutputStreamAt(0))
+                {
+                    using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                    {
+
+
+                        dataWriter.WriteString(jsonText);
+                        await dataWriter.StoreAsync();
+                        await outputStream.FlushAsync();
+                    }
+                }
+                stream.Dispose();
+            }
+            else
+            {
+                Rusher rusherToDelete = new Rusher();
+                rushers = JsonConvert.DeserializeObject<List<Rusher>>(jsonText);
+
+                //yes, I know this takes time O(n) ....
+                foreach (Rusher r in rushers)
+                {
+
+                    if (r.RecordNumber == recordNumber)
+                    {
+                        //if such a record is found, mark it for deletion
+                        rusherToDelete = r;
+
+                    }
+
+                }
+
+                //delete the marked record
+                rushers.Remove(rusherToDelete);
+
+                jsonText = JsonConvert.SerializeObject(rushers, Formatting.Indented);
+
+                //overwrite the file
+                File.WriteAllText(filePath, "");
+
+                //write the modified list to the file
+                var rushersStream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+                using (var outputStream = rushersStream.GetOutputStreamAt(0))
+                {
+                    using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                    {
+
+
+                        dataWriter.WriteString(jsonText);
+                        await dataWriter.StoreAsync();
+                        await outputStream.FlushAsync();
+                    }
+                }
+                stream.Dispose();
+            }
+            
+
+
+        }
+
         public void Dispose()
         {
             AllPassers = null;
