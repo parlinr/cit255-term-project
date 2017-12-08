@@ -41,7 +41,7 @@ namespace TermProject
             //repo.GetAllReceivers();
             //repo.SelectByRecordNumber(10000, Table.Passers);
             //repo.InsertPasser(p);
-            repo.Delete(Table.Passers, 10394);
+            //repo.Delete(Table.Passers, 10394);
             Passers = repo.AllPassers;
 
         }

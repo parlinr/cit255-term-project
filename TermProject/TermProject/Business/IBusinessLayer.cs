@@ -13,7 +13,9 @@ namespace TermProject
         ObservableCollection<Receiver> QueryReceiversByScore(int minScore, int maxScore, out List<Receiver> r);
         ObservableCollection<Rusher> QueryRushersByScore(int minScore, int maxScore, out List<Rusher> r);
         //void QueryByScoreAndYards(Table table, int minYards, int maxYards);
-        void SortByScore(Table table);
+        ObservableCollection<Passer> SortPassersByScore(ObservableCollection<Passer> oc);
+        ObservableCollection<Receiver> SortReceiversByScore(ObservableCollection<Receiver> oc);
+        ObservableCollection<Rusher> SortRushersByScore(ObservableCollection<Rusher> oc);
         //void SortByScoreAndYards(Table table);
 
     }

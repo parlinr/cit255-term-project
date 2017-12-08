@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TermProject
 {
-    public enum SourceEnum
+    public enum Source
     {
         None,
         File,

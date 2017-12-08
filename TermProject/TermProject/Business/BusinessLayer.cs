@@ -37,14 +37,30 @@ namespace TermProject
             return queryResult;
         }
 
-        public List<Rusher> QueryRushersByScore(int minScore, int maxScore)
+        public ObservableCollection<Rusher> QueryRushersByScore(int minScore, int maxScore, out List<Rusher> rusherReturnList)
         {
             JSONRepository repo = new JSONRepository();
             repo.GetAllRushersAsList();
             List<Rusher> allRushers = repo.AllRushersList;
-            List<Rusher> queryResult = (List<Rusher>)allRushers.Where(r => r.Score >= minScore && r.Score <= maxScore);
+            rusherReturnList = (List<Rusher>)allRushers.Where(r => r.Score >= minScore && r.Score <= maxScore);
+            ObservableCollection<Rusher> queryResult = new ObservableCollection<Rusher>(rusherReturnList);
 
             return queryResult;
+        }
+
+        public ObservableCollection<Passer> SortPassersByScore(ObservableCollection<Passer> pageOutput)
+        {
+            return (ObservableCollection<Passer>)pageOutput.OrderBy(p => p.Score);
+        }
+
+        public ObservableCollection<Receiver> SortReceiversByScore(ObservableCollection<Receiver> pageOutput)
+        {
+            return (ObservableCollection<Receiver>)pageOutput.OrderBy(p => p.Score);
+        }
+
+        public ObservableCollection<Rusher> SortRushersByScore(ObservableCollection<Rusher> pageOutput)
+        {
+            return (ObservableCollection<Rusher>)pageOutput.OrderBy(p => p.Score);
         }
         #endregion
 
