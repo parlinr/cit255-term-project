@@ -15,7 +15,6 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.AppService;
 using System.ServiceModel;
-using System.Collections.ObjectModel;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -27,7 +26,9 @@ namespace TermProject
     /// </summary>
     public sealed partial class PasserPage : Page
     {
+        //the app pages need an ObservableCollection, but the operations I want only work on Lists
         public ObservableCollection<Passer> Passers { get; set; }
+        public List<Passer> PassersList { get; set; }
 
         public PasserPage()
         {

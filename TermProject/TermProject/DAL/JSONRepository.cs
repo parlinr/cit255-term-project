@@ -13,15 +13,16 @@ namespace TermProject
 {
     public class JSONRepository : IRepository
     {
-        //we need a byte count for adding on to the end of files
-        public int FileLength { get; set; }
-
+        
         //With UWP's subset of .NET, we cannot have: 1) return types, or 2) out or
         //ref keywords in async methods (required for file IO in UWP). Intermediary
         //properties will have to do.
         public ObservableCollection<Passer> AllPassers { get; set; }
         public ObservableCollection<Rusher> AllRushers { get; set; }
         public ObservableCollection<Receiver> AllReceivers { get; set; }
+        public List<Passer> AllPassersList { get; set; }
+        public List<Rusher> AllRushersList { get; set; }
+        public List<Receiver> AllReceiversList { get; set; }
         public ObservableCollection<Passer> APasser { get; set; }
         public ObservableCollection<Rusher> ARusher { get; set; }
         public ObservableCollection<Receiver> AReceiver { get; set; }
@@ -61,6 +62,40 @@ namespace TermProject
             AllPassers = collection;
         }
 
+        public async void GetAllPassersAsList()
+        {
+            List<Passer> passers = new List<Passer>();
+            string jsonText;
+
+            //copy JSON file to AppData folder if it doesn't already exist
+            TransferToStorage("passers.json");
+
+
+
+            //specify where the target (JSON) file is
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\passers.json";
+            //string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, passerFile);
+            Windows.Storage.StorageFile passersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            //build the stream and write it to a string
+            var stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            //serialize the string
+            passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+            AllPassersList = passers;
+        }
+
         public async void GetAllRushers()
         {
             List<Rusher> rushers = new List<Rusher>();
@@ -92,6 +127,36 @@ namespace TermProject
             AllRushers = collection;
         }
 
+        public async void GetAllRushersAsList()
+        {
+            List<Rusher> rushers = new List<Rusher>();
+            string jsonText;
+
+            TransferToStorage("rushers.json");
+            //specify where the target (JSON) file is
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\rushers.json";
+
+            Windows.Storage.StorageFile rushersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            //build the stream and write it to a string
+            var stream = await rushersFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            //serialize the string
+            rushers = JsonConvert.DeserializeObject<List<Rusher>>(jsonText);
+            AllRushersList = rushers;
+        }
+
         public async void GetAllReceivers()
         {
             List<Receiver> receivers = new List<Receiver>();
@@ -121,6 +186,36 @@ namespace TermProject
             receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
             ObservableCollection<Receiver> collection = new ObservableCollection<Receiver>(receivers);
             AllReceivers = collection;
+        }
+
+        public async void GetAllReceiversAsList()
+        {
+            List<Receiver> receivers = new List<Receiver>();
+            string jsonText;
+
+            //specify where the target (JSON) file is
+            TransferToStorage("receivers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\receivers.json";
+
+            Windows.Storage.StorageFile receiversFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            //build the stream and write it to a string
+            var stream = await receiversFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            //serialize the string
+            receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
+            AllReceiversList = receivers;
         }
 
         public async void SelectByRecordNumber(int recordNumber, Table table)
