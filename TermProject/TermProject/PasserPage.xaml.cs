@@ -17,6 +17,7 @@ using Windows.ApplicationModel.AppService;
 using System.ServiceModel;
 
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace TermProject
@@ -43,6 +44,8 @@ namespace TermProject
             //repo.InsertPasser(p);
             //repo.Delete(Table.Passers, 10394);
             Passers = repo.AllPassers;
+
+           
 
         }
 

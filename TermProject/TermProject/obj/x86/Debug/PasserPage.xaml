@@ -10,38 +10,70 @@
 
     <Page.Resources>
         <DataTemplate x:Key="PasserListDataTemplate"                         >
-            <StackPanel x:ConnectionId='2'>
-                <TextBlock x:ConnectionId='3'                      />
-                <TextBlock x:ConnectionId='4'                         />
-                <TextBlock x:ConnectionId='5'                          />
-                <TextBlock x:ConnectionId='6'                             />
-                <TextBlock x:ConnectionId='7'                              />
-                <TextBlock x:ConnectionId='8'                      />
-                <TextBlock x:ConnectionId='9'                           />
-                <TextBlock x:ConnectionId='10'                              />
-                <TextBlock x:ConnectionId='11'                             />
-            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="{Binding Score}"/>
+                <TextBlock Grid.Column="1" Text="{Binding LastName}"/>
+                <TextBlock Grid.Column="2" Text="{Binding FirstName}"/>
+                <TextBlock Grid.Column="3" Text="{Binding TeamNameLong}"/>
+                <TextBlock Grid.Column="4" Text="{Binding TeamNameShort}"/>
+                <TextBlock Grid.Column="5" Text="{Binding Yards}"/>
+                <TextBlock Grid.Column="6" Text="{Binding Touchdowns}"/>
+                <TextBlock Grid.Column="7" Text="{Binding Interceptions}"/>
+                <TextBlock Grid.Column="8" Text="{Binding RecordNumber}"/>
+            </Grid>
         </DataTemplate>
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--
-        <TextBlock>Lorem Ipsum</TextBlock>
-        <StackPanel Name="stackPanel1" Loaded="PasserPage_Loaded">
-                    
-        </StackPanel>
-        -->
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
-        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+       
 
+           
+        <GridView x:ConnectionId='2' ItemTemplate="{StaticResource PasserListDataTemplate}"
+                                                
+                  Grid.Column="0">
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+
+
+        </GridView>
+        <GridView Grid.Column="1">
+            <Button Content="1" />
+            <Button Content="2" />
+            <Button Content="3" />
+            <Button Content="4" />
+        </GridView>
         
-            <ListView x:ConnectionId='12'                                 ItemTemplate="{StaticResource PasserListDataTemplate}">
-                
-            </ListView>
-        
+       
+
+
+
+
+
+
+
 
     </Grid>
 </Page>
