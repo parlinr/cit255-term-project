@@ -17,6 +17,7 @@ namespace TermProject
         ObservableCollection<Receiver> SortReceiversByScore(ObservableCollection<Receiver> oc);
         ObservableCollection<Rusher> SortRushersByScore(ObservableCollection<Rusher> oc);
         Task<ObservableCollection<Passer>> GetAllPassers();
+        void InsertPasser(Passer p);
         //void SortByScoreAndYards(Table table);
 
     }

@@ -252,6 +252,7 @@ namespace TermProject.TermProject_XamlTypeInfo
                 userType.AddMemberName("Passers");
                 userType.AddMemberName("viewmodel");
                 userType.AddMemberName("PassersList");
+                userType.AddMemberName("APasser");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -440,6 +441,16 @@ namespace TermProject.TermProject_XamlTypeInfo
             var that = (global::TermProject.PasserPage)instance;
             that.PassersList = (global::System.Collections.Generic.List<global::TermProject.Passer>)Value;
         }
+        private object get_12_PasserPage_APasser(object instance)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            return that.APasser;
+        }
+        private void set_12_PasserPage_APasser(object instance, object Value)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            that.APasser = (global::TermProject.Passer)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -519,6 +530,12 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "PassersList", "System.Collections.Generic.List`1<TermProject.Passer>");
                 xamlMember.Getter = get_11_PasserPage_PassersList;
                 xamlMember.Setter = set_11_PasserPage_PassersList;
+                break;
+            case "TermProject.PasserPage.APasser":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.PasserPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "APasser", "TermProject.Passer");
+                xamlMember.Getter = get_12_PasserPage_APasser;
+                xamlMember.Setter = set_12_PasserPage_APasser;
                 break;
             }
             return xamlMember;

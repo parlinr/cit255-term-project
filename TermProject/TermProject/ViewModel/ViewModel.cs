@@ -9,18 +9,25 @@ namespace TermProject
     public class ViewModel
     {
         public ObservableCollection<Passer> p { get; set; }
+        public BusinessLayer BusinessLayer { get; set; }
 
         public ViewModel()
         {
             p = new ObservableCollection<Passer>();
+            BusinessLayer = new BusinessLayer();
         }
 
         public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
-            BusinessLayer b = new BusinessLayer();
+            
             ObservableCollection<Passer> returnedCollection = new ObservableCollection<Passer>();
-            returnedCollection = await b.GetAllPassers();
+            returnedCollection = await BusinessLayer.GetAllPassers();
             return returnedCollection;
+        }
+
+        public void InsertPasser(Passer p)
+        {
+            BusinessLayer.InsertPasser(p);
         }
     }
 }

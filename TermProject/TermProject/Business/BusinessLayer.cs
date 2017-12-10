@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace TermProject
 { 
-    class BusinessLayer : IBusinessLayer
+    public class BusinessLayer : IBusinessLayer
     {
         #region PROPERTIES
         
@@ -70,6 +70,13 @@ namespace TermProject
             
             ObservableCollection<Passer> ob = await j.GetAllPassers();
             return ob;
+
+        }
+
+        public void InsertPasser(Passer p)
+        {
+            JSONRepository j = new JSONRepository();
+            j.InsertPasser(p);
         }
         #endregion
 

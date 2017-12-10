@@ -33,6 +33,7 @@ namespace TermProject
         public ObservableCollection<Passer> Passers { get; set; }
         public ViewModel viewmodel { get; set; }
         public List<Passer> PassersList { get; set; }
+        public Passer APasser { get; set; }
         
 
         public PasserPage()
@@ -41,7 +42,7 @@ namespace TermProject
             this.InitializeComponent();
             Passers = new ObservableCollection<Passer>();
             viewmodel = new ViewModel();
-            
+            APasser = new Passer();
 
            
 
@@ -55,15 +56,14 @@ namespace TermProject
 
         private async void GetAllPassersButton_Clicked(object sender, RoutedEventArgs e)
         {
-            BusinessLayer b = new BusinessLayer();
-
             ObservableCollection<Passer> test = new ObservableCollection<Passer>();
             test = await viewmodel.GetAllPassers();
+            
             foreach (Passer p in test)
             {
                 Passers.Add(p);
             }
-                        
+                   
             //Passers = (ObservableCollection<Passer>)test;
             //Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
             //Passers.Add(p);
@@ -82,6 +82,7 @@ namespace TermProject
 
         private async void AddPasserButton_Clicked(object sender, RoutedEventArgs e)
         {
+            
             var passerDialogResult = await addPasserDialog.ShowAsync();            
             switch (passerDialogResult)
             {
@@ -90,15 +91,30 @@ namespace TermProject
                     {
                         ContentDialog fail = new ContentDialog
                         {
-                            Title = "You failed",
+                            Title = "Failure",
                             IsPrimaryButtonEnabled = true,
-                            PrimaryButtonText = "You just failed"
+                            Content = @"The value 'Record Number' is required and must be an integer.",
+                            PrimaryButtonText = "OK"
                         };
                         await fail.ShowAsync();
                     }
                     else
                     {
-
+                        APasser = new Passer();
+                        Int32.TryParse(scoreTextBox.Text, out int score);
+                        APasser.Score = score;
+                        APasser.FirstName = firstNameTextBox.Text;
+                        APasser.LastName = lastNameTextBox.Text;
+                        APasser.TeamNameLong = teamNameLongTextBox.Text;
+                        APasser.TeamNameShort = teamNameShortTextBox.Text;
+                        APasser.RecordNumber = Convert.ToInt32(recordNumberTextBox.Text);
+                        Int32.TryParse(touchdownsTextBox.Text, out int touchdowns);
+                        Int32.TryParse(yardsTextBox.Text, out int yards);
+                        Int32.TryParse(interceptionsTextBox.Text, out int interceptions);
+                        APasser.Yards = yards;
+                        APasser.Touchdowns = touchdowns;
+                        APasser.Interceptions = interceptions;
+                        viewmodel.InsertPasser(APasser);
                     }
                     break;
                 case ContentDialogResult.Secondary:
