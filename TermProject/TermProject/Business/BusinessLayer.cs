@@ -62,6 +62,15 @@ namespace TermProject
         {
             return (ObservableCollection<Rusher>)pageOutput.OrderBy(p => p.Score);
         }
+
+        public ObservableCollection<Passer> GetAllPassers()
+        {
+            JSONRepository j = new JSONRepository();
+            j.GetAllPassers();
+            
+            ObservableCollection<Passer> ob = j.AllPassers;
+            return ob;
+        }
         #endregion
 
     }

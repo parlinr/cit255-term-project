@@ -27,7 +27,7 @@ namespace TermProject
         public ObservableCollection<Rusher> ARusher { get; set; }
         public ObservableCollection<Receiver> AReceiver { get; set; }
 
-        public async void GetAllPassers()
+        public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
             List<Passer> passers = new List<Passer>();
             string jsonText;
@@ -59,7 +59,8 @@ namespace TermProject
             //serialize the string
             passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
             ObservableCollection<Passer> collection = new ObservableCollection<Passer>(passers);
-            AllPassers = collection;
+            //AllPassers = collection;
+            return collection;
         }
 
         public async void GetAllPassersAsList()

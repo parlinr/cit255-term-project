@@ -47,7 +47,7 @@
 
            
         <GridView x:ConnectionId='2' ItemTemplate="{StaticResource PasserListDataTemplate}"
-                                                
+                                                             
                   Grid.Column="0">
 
             <GridView.ItemsPanel>
@@ -60,8 +60,8 @@
 
         </GridView>
         <GridView Grid.Column="1">
-            <Button Content="1" />
-            <Button Content="2" />
+            <Button x:ConnectionId='3' Content="Test"                                     />
+            <Button x:ConnectionId='4' Content="Test 2"                       />
             <Button Content="3" />
             <Button Content="4" />
         </GridView>

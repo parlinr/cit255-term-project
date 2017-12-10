@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace TermProject
 {
@@ -10,7 +11,7 @@ namespace TermProject
     {
         //all of the return types are void because all IO in UWP uses
         //async methods
-        void GetAllPassers();
+        Task<ObservableCollection<Passer>> GetAllPassers();
         void GetAllPassersAsList();
         void GetAllRushers();
         void GetAllRushersAsList();
