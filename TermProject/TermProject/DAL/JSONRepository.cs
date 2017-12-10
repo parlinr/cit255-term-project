@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Collections.ObjectModel;
 using Windows.Storage;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 
 namespace TermProject
@@ -26,6 +28,11 @@ namespace TermProject
         public ObservableCollection<Passer> APasser { get; set; }
         public ObservableCollection<Rusher> ARusher { get; set; }
         public ObservableCollection<Receiver> AReceiver { get; set; }
+
+        public JSONRepository()
+        {
+            AllPassersList = new List<Passer>();
+        }
 
         public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
@@ -313,18 +320,35 @@ namespace TermProject
 
             //write to the file
             var stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
-            using (var outputStream = stream.GetOutputStreamAt(stream.Size - 1))
+            if (stream.Size != 0)
             {
-                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                using (var outputStream = stream.GetOutputStreamAt(stream.Size - 1))
                 {
-                    dataWriter.WriteString(comma);
-                    dataWriter.WriteString(jsonText);
-                    dataWriter.WriteString(rightBracket);
-                    await dataWriter.StoreAsync();
-                    await outputStream.FlushAsync();
+                    using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                    {
+                        dataWriter.WriteString(comma);
+                        dataWriter.WriteString(jsonText);
+                        dataWriter.WriteString(rightBracket);
+                        await dataWriter.StoreAsync();
+                        await outputStream.FlushAsync();
+                    }
                 }
+                stream.Dispose();
             }
-            stream.Dispose(); 
+            else
+            {
+                using (var outputStream = stream.GetOutputStreamAt(0))
+                {
+                    using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                    {
+                        dataWriter.WriteString(jsonText);
+                        await dataWriter.StoreAsync();
+                        await outputStream.FlushAsync();
+                    }
+                }
+                stream.Dispose();
+            }
+            
         }
 
         public async void InsertRusher(Rusher r)
@@ -414,15 +438,99 @@ namespace TermProject
          
         }
 
-        public async void UpdatePassers()
+        public async Task<bool> UpdatePasser(Passer q)
         {
+            TransferToStorage("passers.json");
+            string jsonText = "";
+            bool wasSuccessful = false;
+            List<Passer> passers = new List<Passer>();
+            Passer isThePasserThere = new Passer
+            {
+                RecordNumber = -999999
+            };
 
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            Windows.Storage.StorageFile file = await storageFolder.GetFileAsync("passers.json");
+
+            var stream = await file.OpenAsync(FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+            isThePasserThere = (Passer)passers.Where(p => p.RecordNumber == q.RecordNumber);
+            if (isThePasserThere.RecordNumber == -999999)
+            {
+                return wasSuccessful;
+            }
+            foreach (Passer p in passers)
+            {
+                if (p.RecordNumber == q.RecordNumber)
+                {
+                    if (q.FirstName != "")
+                    {
+                        p.FirstName = q.FirstName;
+                    }
+                    if (p.Interceptions != -1)
+                    {
+                        p.Interceptions = q.Interceptions;
+                    }
+                    if (p.LastName != "")
+                    {
+                        p.LastName = q.LastName;
+                    }
+                    if (p.Score != -1)
+                    {
+                        p.Score = q.Score;
+                    }
+                    if (p.TeamNameLong != "")
+                    {
+                        p.TeamNameLong = q.TeamNameLong;
+                    }
+                    if (p.TeamNameShort != "")
+                    {
+                        p.TeamNameShort = q.TeamNameShort;
+                    }
+                    if (p.Touchdowns != -1)
+                    {
+                        p.Touchdowns = q.Touchdowns;
+                    }
+                    if (p.Yards != -999)
+                    {
+                        p.Yards = q.Yards;
+                    }
+
+                }
+            }
+
+            File.WriteAllText(file.Path + "\\passers.json", "");
+
+            stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(0))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    jsonText = JsonConvert.SerializeObject(passers, Formatting.Indented);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose();
+
+            return wasSuccessful = true;
         }
 
-        public async void Delete(Table table, int recordNumber)
+        public async Task<bool> Delete(Table table, int recordNumber)
         {
             string ext = "";
             string jsonText = "";
+            bool wasDeleted = false;
             List<Passer> passers = new List<Passer>();
             List<Receiver> receivers = new List<Receiver>();
             List<Rusher> rushers = new List<Rusher>();
@@ -446,7 +554,7 @@ namespace TermProject
             Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
             string root = folder.Path;
             string filePath = root + ext;
-            Windows.Storage.StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(filePath);
+            Windows.Storage.StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(filePath); //hangs
 
             //build the stream and write it to a string
             var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
@@ -477,6 +585,10 @@ namespace TermProject
                     }
 
                 }
+                if (passerToDelete == null)
+                {
+                    return wasDeleted;
+                }
 
                 //delete the marked record
                 passers.Remove(passerToDelete);
@@ -500,6 +612,8 @@ namespace TermProject
                     }
                 }
                 stream.Dispose();
+                wasDeleted = true;
+                return wasDeleted;
 
             }
             else if (table == Table.Receivers)
@@ -520,6 +634,11 @@ namespace TermProject
                     }
 
                 }
+                if (receiverToDelete == null)
+                {
+                    return wasDeleted;
+                }
+
 
                 //delete the marked record
                 receivers.Remove(receiverToDelete);
@@ -543,6 +662,8 @@ namespace TermProject
                     }
                 }
                 stream.Dispose();
+                wasDeleted = true;
+                return wasDeleted;
             }
             else
             {
@@ -560,6 +681,10 @@ namespace TermProject
 
                     }
 
+                }
+                if (rusherToDelete == null)
+                {
+                    return wasDeleted;
                 }
 
                 //delete the marked record
@@ -584,9 +709,92 @@ namespace TermProject
                     }
                 }
                 stream.Dispose();
+                wasDeleted = true;
+                return wasDeleted;
             }
             
 
+
+        }
+
+        public async void DeletePasser(int recordNumber)
+        {
+            TransferToStorage("passers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string jsonText = "";
+            List<Passer> passers = new List<Passer>();
+            Passer passerToDelete = new Passer
+            {
+                Yards = -99999
+            };
+            string comma = ",";
+            string rightBracket = "]";
+            var pth = root + "\\passers.json";
+            Windows.Storage.StorageFile passersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            var stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+
+            passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+            foreach (Passer p in passers)
+            {
+                if (p.RecordNumber == recordNumber)
+                {
+                    passerToDelete = p;
+                }
+            }
+            if (passerToDelete.Yards == -99999)
+            {
+                ContentDialog failed = new ContentDialog
+                {
+                    Title = "Failure",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The passer with the specified Record Number was not found."
+                };
+
+                await failed.ShowAsync();
+                return;
+
+            }
+
+            passers.Remove(passerToDelete);
+
+            jsonText = JsonConvert.SerializeObject(passers, Formatting.Indented);
+
+            File.WriteAllText(pth, "");
+
+            stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(0))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    dataWriter.WriteString(jsonText);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose();
+
+            ContentDialog success = new ContentDialog
+            {
+                Title = "Success",
+                IsPrimaryButtonEnabled = true,
+                PrimaryButtonText = "OK",
+                Content = "The specified passer record was deleted."
+            };
+            await success.ShowAsync();
 
         }
 

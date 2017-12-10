@@ -19,6 +19,9 @@ namespace TermProject
         void GetAllReceiversAsList();
         void SelectByRecordNumber(int recordNumber, Table table);
         void InsertPasser(Passer obj);
+        Task<bool> Delete(Table table, int recordNumber);
+        void DeletePasser(int recordNumber);
+        Task<bool> UpdatePasser(Passer p);
         void Dispose();
 
     }

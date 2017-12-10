@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.AppService;
 using System.ServiceModel;
+using System.Threading.Tasks;
 
 
 
@@ -115,7 +116,148 @@ namespace TermProject
                         APasser.Touchdowns = touchdowns;
                         APasser.Interceptions = interceptions;
                         viewmodel.InsertPasser(APasser);
+                        ContentDialog success = new ContentDialog
+                        {
+                            Title = "Success",
+                            Content = "The passer was successfully added.",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "OK"
+                        };
+                        await success.ShowAsync();
+
+                        
                     }
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private async void DeletePasserButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var deletePasserDialogResult = await deletePasserDialog.ShowAsync();
+            bool deleteResult = false;
+            switch (deletePasserDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    if (Int32.TryParse(recordNumberInput.Text, out int recordNumber))
+                    {
+                        JSONRepository j = new JSONRepository();
+                        j.DeletePasser(recordNumber);
+                    }
+                    else
+                    {
+                        ContentDialog badInput = new ContentDialog
+                        {
+                            Title = "Failure",
+                            Content = "The input value was not an integer.",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "OK"
+                        };
+                        await badInput.ShowAsync();
+                    }
+                    
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+
+        private async void UpdatePasserButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var updatePasserDialogResult = await updatePasserDialog.ShowAsync();
+            switch(updatePasserDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    if (!Int32.TryParse(updateRecordNumberTextBox.Text, out int recordNumber))
+                    {
+                        ContentDialog badInput = new ContentDialog
+                        {
+                            Title = "Failed",
+                            Content = "The given Record Number was not an integer.",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "OK"
+                        };
+                        await badInput.ShowAsync();
+                    }
+                    else
+                    {
+                        //if the user didn't change the interceptions, set the sent object's
+                        //to -1 for validation further on
+                        Passer newPasser = new Passer();
+                        newPasser.FirstName = updateFirstNameTextBox.Text;
+                        newPasser.LastName = updateLastNameTextBox.Text;
+                        if (!Int32.TryParse(updateInterceptionsTextBox.Text, out int interceptions))
+                        {
+                            newPasser.Interceptions = -1;
+                        }
+                        else
+                        {
+                            newPasser.Interceptions = interceptions;
+                        }
+                        
+                        if (!Int32.TryParse(updateTouchdownsTextBox.Text, out int touchdowns))
+                        {
+                            newPasser.Touchdowns = -1;
+                        }
+                        else
+                        {
+                            newPasser.Touchdowns = touchdowns;
+                        }
+                       
+                        if (!Int32.TryParse(updateYardsTextBox.Text, out int yards))
+                        {
+                            newPasser.Yards = -999;
+                        }
+                        else
+                        {
+                            newPasser.Yards = yards;
+                        }
+                        
+                        Int32.TryParse(updateRecordNumberTextBox.Text, out int passerRecordNumber);
+                        newPasser.RecordNumber = passerRecordNumber;
+                        if (!Int32.TryParse(updateScoreTextBox.Text, out int score))
+                        {
+                            newPasser.Score = -1;
+                        }
+                        else
+                        {
+                            newPasser.Score = score;
+                        }
+                        
+                        newPasser.TeamNameLong = updateTeamNameLongTextBox.Text;
+                        newPasser.TeamNameShort = updateTeamNameShortTextBox.Text;
+                        Task<bool> wasSuccessful = viewmodel.UpdatePasser(newPasser);
+                        bool success = wasSuccessful.Result;
+                        if (success)
+                        {
+                            ContentDialog worked = new ContentDialog
+                            {
+                                Title = "Success",
+                                IsPrimaryButtonEnabled = true,
+                                PrimaryButtonText = "OK",
+                                Content = "The passer entry was successfully updated."
+                            };
+                            await worked.ShowAsync();
+                        }
+                        else
+                        {
+                            ContentDialog failed = new ContentDialog
+                            {
+                                Title = "Failure",
+                                IsPrimaryButtonEnabled = true,
+                                PrimaryButtonText = "OK",
+                                Content = "There was no passer entry with the specified Record Number to update."
+                            };
+                            await failed.ShowAsync();
+                        }
+                    }
+
                     break;
                 case ContentDialogResult.Secondary:
                     break;

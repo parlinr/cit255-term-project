@@ -29,5 +29,22 @@ namespace TermProject
         {
             BusinessLayer.InsertPasser(p);
         }
+
+        public Task<bool> Delete(Table table, int recordNumber)
+        {
+            return BusinessLayer.Delete(table, recordNumber);
+            
+        }
+
+        public void DeletePasser(int recordNumber)
+        {
+            BusinessLayer.DeletePasser(recordNumber);
+
+        }
+
+        public Task<bool> UpdatePasser(Passer p)
+        {
+            return BusinessLayer.UpdatePasser(p);
+        }
     }
 }

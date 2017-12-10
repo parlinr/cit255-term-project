@@ -78,6 +78,29 @@ namespace TermProject
             JSONRepository j = new JSONRepository();
             j.InsertPasser(p);
         }
+
+        public async Task<bool> Delete(Table table, int recordNumber)
+        {
+            bool taskResult;
+            JSONRepository j = new JSONRepository();
+            taskResult = await j.Delete(table, recordNumber);
+            return taskResult;
+        }
+
+        public void DeletePasser(int recordNumber)
+        {
+            bool taskResult;
+            JSONRepository j = new JSONRepository();
+            j.DeletePasser(recordNumber);
+            
+        }
+
+        public async Task<bool> UpdatePasser(Passer p)
+        {
+            JSONRepository j = new JSONRepository();
+            bool wasSuccessful = await j.UpdatePasser(p);
+            return wasSuccessful;
+        }
         #endregion
 
     }

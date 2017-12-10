@@ -18,6 +18,7 @@ namespace TermProject
         ObservableCollection<Rusher> SortRushersByScore(ObservableCollection<Rusher> oc);
         Task<ObservableCollection<Passer>> GetAllPassers();
         void InsertPasser(Passer p);
+        Task<bool> Delete(Table table, int recordNumber);
         //void SortByScoreAndYards(Table table);
 
     }

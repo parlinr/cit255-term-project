@@ -109,6 +109,84 @@
                 </Grid>
             </StackPanel>
         </ContentDialog>
+
+        <ContentDialog x:Name="updatePasserDialog"
+                       PrimaryButtonText="Update"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       SecondaryButtonText="Cancel"
+                       Title="Add Passer">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWholeWords">
+                        Fill out the fields below to update a passer.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
+                        <TextBox  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
+                        <TextBox  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
+                        <TextBox Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
+                        <TextBox Name="updateTeamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Team Name Short</TextBlock>
+                        <TextBox Name="updateTeamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
+                        <TextBox Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
+                        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
+                        <TextBox Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
+                        <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">Interceptions</TextBlock>
+                        <TextBox Name="updateInterceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
+                        <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
+                        <TextBox Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:Name="deletePasserDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Delete"
+                       SecondaryButtonText="Cancel"
+                       Title="Delete Passer">
+            <StackPanel>
+            <TextBlock>Enter the passer's Record Number in the box to delete the passer record.</TextBlock>
+            <TextBox Name="recordNumberInput"></TextBox>
+            </StackPanel>
+        </ContentDialog>
+        
+        
         
         <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
                   ItemsSource="{x:Bind Passers, Mode=OneWay}"
@@ -127,7 +205,8 @@
             <Button Content="Get all passers" Click="GetAllPassersButton_Clicked" />
             <Button Content="Clear screen" Click="ClearScreenButton_Clicked" />
             <Button Content="Add passer" Click="AddPasserButton_Clicked" />
-            <Button Content="4" />
+            <Button Content="Delete passer" Click="DeletePasserButton_Clicked" />
+            <Button Content="Update passer" Click="UpdatePasserButton_Clicked" />
         </GridView>
         
        
