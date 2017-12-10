@@ -31,7 +31,7 @@ namespace TermProject
 
         //the app pages need an ObservableCollection, but the operations I want only work on Lists
         public ObservableCollection<Passer> Passers { get; set; }
-        
+        public ViewModel viewmodel { get; set; }
         public List<Passer> PassersList { get; set; }
         
 
@@ -40,16 +40,8 @@ namespace TermProject
             //Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
             this.InitializeComponent();
             Passers = new ObservableCollection<Passer>();
-
-            //JSONRepository repo = new JSONRepository();
-            //repo.GetAllPassers();
-            //repo.GetAllRushers();
-            //repo.InsertPasser(p);
-            //repo.GetAllReceivers();
-            //repo.SelectByRecordNumber(10000, Table.Passers);
-            //repo.InsertPasser(p);
-            //repo.Delete(Table.Passers, 10394);
-            //Passers = repo.AllPassers;
+            viewmodel = new ViewModel();
+            
 
            
 
@@ -63,18 +55,15 @@ namespace TermProject
 
         private async void GetAllPassersButton_Clicked(object sender, RoutedEventArgs e)
         {
-            //Passer q = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
-            JSONRepository repo = new JSONRepository();
-            
+            BusinessLayer b = new BusinessLayer();
+
             ObservableCollection<Passer> test = new ObservableCollection<Passer>();
-            test = await repo.GetAllPassers();
-            //test.Add(q);
+            test = await viewmodel.GetAllPassers();
             foreach (Passer p in test)
             {
                 Passers.Add(p);
             }
-            
-            
+                        
             //Passers = (ObservableCollection<Passer>)test;
             //Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
             //Passers.Add(p);
@@ -82,12 +71,40 @@ namespace TermProject
 
         }
 
-        private void Test2_Clicked(object sender, RoutedEventArgs e)
+        private void ClearScreenButton_Clicked(object sender, RoutedEventArgs e)
         {
             var passersForLoop = Passers.ToList();
             foreach (Passer q in passersForLoop)
             {
                 Passers.Remove(q);
+            }
+        }
+
+        private async void AddPasserButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var passerDialogResult = await addPasserDialog.ShowAsync();            
+            switch (passerDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    if (!Int32.TryParse(recordNumberTextBox.Text, out int recordNumber))
+                    {
+                        ContentDialog fail = new ContentDialog
+                        {
+                            Title = "You failed",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "You just failed"
+                        };
+                        await fail.ShowAsync();
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
             }
         }
     }

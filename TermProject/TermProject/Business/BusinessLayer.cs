@@ -63,12 +63,12 @@ namespace TermProject
             return (ObservableCollection<Rusher>)pageOutput.OrderBy(p => p.Score);
         }
 
-        public ObservableCollection<Passer> GetAllPassers()
+        public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
             JSONRepository j = new JSONRepository();
-            j.GetAllPassers();
+            //await j.GetAllPassers();
             
-            ObservableCollection<Passer> ob = j.AllPassers;
+            ObservableCollection<Passer> ob = await j.GetAllPassers();
             return ob;
         }
         #endregion

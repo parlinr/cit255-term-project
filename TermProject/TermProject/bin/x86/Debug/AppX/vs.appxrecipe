@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T11:34:09.378</Modified>
+      <Modified>2017-12-10T13:52:57.887</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
-      <Modified>2017-12-10T11:34:09.191</Modified>
+      <Modified>2017-12-10T13:52:57.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -541,61 +541,61 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\passers.json">
       <PackagePath>Assets\passers.json</PackagePath>
-      <Modified>2017-12-10T08:39:58.279</Modified>
+      <Modified>2017-12-10T12:07:42.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\receivers.json">
       <PackagePath>Assets\receivers.json</PackagePath>
-      <Modified>2017-12-10T08:39:58.282</Modified>
+      <Modified>2017-12-10T12:07:42.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\rushers.json">
       <PackagePath>Assets\rushers.json</PackagePath>
-      <Modified>2017-12-10T08:39:58.283</Modified>
+      <Modified>2017-12-10T12:07:42.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\test.json">
       <PackagePath>test.json</PackagePath>
-      <Modified>2017-12-10T08:39:58.397</Modified>
+      <Modified>2017-12-10T12:07:42.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-12-10T08:39:09.606</Modified>
+      <Modified>2017-12-10T12:07:16.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-12-10T08:39:09.600</Modified>
+      <Modified>2017-12-10T12:07:16.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.600</Modified>
+      <Modified>2017-12-10T12:07:16.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.601</Modified>
+      <Modified>2017-12-10T12:07:16.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.601</Modified>
+      <Modified>2017-12-10T12:07:16.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.601</Modified>
+      <Modified>2017-12-10T12:07:16.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.602</Modified>
+      <Modified>2017-12-10T12:07:16.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T08:39:09.602</Modified>
+      <Modified>2017-12-10T12:07:16.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.xr.xml">
       <PackagePath>TermProject.xr.xml</PackagePath>
-      <Modified>2017-12-10T08:46:02.741</Modified>
+      <Modified>2017-12-10T13:51:48.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -604,11 +604,11 @@
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T11:27:52.384</Modified>
+      <Modified>2017-12-10T13:51:49.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
       <PackagePath>TermProject.exe</PackagePath>
-      <Modified>2017-12-10T11:34:09.376</Modified>
+      <Modified>2017-12-10T13:52:57.884</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

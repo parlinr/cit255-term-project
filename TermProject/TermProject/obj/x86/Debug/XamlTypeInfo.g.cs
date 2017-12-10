@@ -132,7 +132,7 @@ namespace TermProject.TermProject_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "TermProject.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -144,9 +144,10 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeNameTable[8] = "Double";
             _typeNameTable[9] = "String";
             _typeNameTable[10] = "Int32";
-            _typeNameTable[11] = "System.Collections.Generic.List`1<TermProject.Passer>";
+            _typeNameTable[11] = "TermProject.ViewModel";
+            _typeNameTable[12] = "System.Collections.Generic.List`1<TermProject.Passer>";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::TermProject.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -158,7 +159,8 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeTable[8] = typeof(global::System.Double);
             _typeTable[9] = typeof(global::System.String);
             _typeTable[10] = typeof(global::System.Int32);
-            _typeTable[11] = typeof(global::System.Collections.Generic.List<global::TermProject.Passer>);
+            _typeTable[11] = typeof(global::TermProject.ViewModel);
+            _typeTable[12] = typeof(global::System.Collections.Generic.List<global::TermProject.Passer>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -198,7 +200,8 @@ namespace TermProject.TermProject_XamlTypeInfo
         private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Passer>(); }
         private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TermProject.Passer>(); }
         private object Activate_7_Passer() { return new global::TermProject.Passer(); }
-        private object Activate_11_List() { return new global::System.Collections.Generic.List<global::TermProject.Passer>(); }
+        private object Activate_11_ViewModel() { return new global::TermProject.ViewModel(); }
+        private object Activate_12_List() { return new global::System.Collections.Generic.List<global::TermProject.Passer>(); }
         private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
@@ -211,7 +214,7 @@ namespace TermProject.TermProject_XamlTypeInfo
             var newItem = (global::TermProject.Passer)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_11_List(object instance, object item)
+        private void VectorAdd_12_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
             var newItem = (global::TermProject.Passer)item;
@@ -247,6 +250,7 @@ namespace TermProject.TermProject_XamlTypeInfo
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_PasserPage;
                 userType.AddMemberName("Passers");
+                userType.AddMemberName("viewmodel");
                 userType.AddMemberName("PassersList");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -298,9 +302,16 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlType = new global::TermProject.TermProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  System.Collections.Generic.List`1<TermProject.Passer>
+            case 11:   //  TermProject.ViewModel
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_11_List;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  System.Collections.Generic.List`1<TermProject.Passer>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_12_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -409,12 +420,22 @@ namespace TermProject.TermProject_XamlTypeInfo
             var that = (global::TermProject.Passer)instance;
             that.RecordNumber = (global::System.Int32)Value;
         }
-        private object get_10_PasserPage_PassersList(object instance)
+        private object get_10_PasserPage_viewmodel(object instance)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            return that.viewmodel;
+        }
+        private void set_10_PasserPage_viewmodel(object instance, object Value)
+        {
+            var that = (global::TermProject.PasserPage)instance;
+            that.viewmodel = (global::TermProject.ViewModel)Value;
+        }
+        private object get_11_PasserPage_PassersList(object instance)
         {
             var that = (global::TermProject.PasserPage)instance;
             return that.PassersList;
         }
-        private void set_10_PasserPage_PassersList(object instance, object Value)
+        private void set_11_PasserPage_PassersList(object instance, object Value)
         {
             var that = (global::TermProject.PasserPage)instance;
             that.PassersList = (global::System.Collections.Generic.List<global::TermProject.Passer>)Value;
@@ -487,11 +508,17 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlMember.Getter = get_9_Passer_RecordNumber;
                 xamlMember.Setter = set_9_Passer_RecordNumber;
                 break;
+            case "TermProject.PasserPage.viewmodel":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.PasserPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "viewmodel", "TermProject.ViewModel");
+                xamlMember.Getter = get_10_PasserPage_viewmodel;
+                xamlMember.Setter = set_10_PasserPage_viewmodel;
+                break;
             case "TermProject.PasserPage.PassersList":
                 userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.PasserPage");
                 xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "PassersList", "System.Collections.Generic.List`1<TermProject.Passer>");
-                xamlMember.Getter = get_10_PasserPage_PassersList;
-                xamlMember.Setter = set_10_PasserPage_PassersList;
+                xamlMember.Getter = get_11_PasserPage_PassersList;
+                xamlMember.Setter = set_11_PasserPage_PassersList;
                 break;
             }
             return xamlMember;

@@ -15,10 +15,12 @@ namespace TermProject
             p = new ObservableCollection<Passer>();
         }
 
-        public void GetAllPassers()
+        public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
             BusinessLayer b = new BusinessLayer();
-            p = b.GetAllPassers();
+            ObservableCollection<Passer> returnedCollection = new ObservableCollection<Passer>();
+            returnedCollection = await b.GetAllPassers();
+            return returnedCollection;
         }
     }
 }
