@@ -95,12 +95,7 @@ namespace TermProject
             
         }
 
-        public async Task<bool> UpdatePasser(Passer p)
-        {
-            JSONRepository j = new JSONRepository();
-            bool wasSuccessful = await j.UpdatePasser(p);
-            return wasSuccessful;
-        }
+        
         #endregion
 
     }

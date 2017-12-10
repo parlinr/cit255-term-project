@@ -229,33 +229,12 @@ namespace TermProject
                         {
                             newPasser.Score = score;
                         }
-                        
+
+                        JSONRepository j = new JSONRepository();
                         newPasser.TeamNameLong = updateTeamNameLongTextBox.Text;
                         newPasser.TeamNameShort = updateTeamNameShortTextBox.Text;
-                        Task<bool> wasSuccessful = viewmodel.UpdatePasser(newPasser);
-                        bool success = wasSuccessful.Result;
-                        if (success)
-                        {
-                            ContentDialog worked = new ContentDialog
-                            {
-                                Title = "Success",
-                                IsPrimaryButtonEnabled = true,
-                                PrimaryButtonText = "OK",
-                                Content = "The passer entry was successfully updated."
-                            };
-                            await worked.ShowAsync();
-                        }
-                        else
-                        {
-                            ContentDialog failed = new ContentDialog
-                            {
-                                Title = "Failure",
-                                IsPrimaryButtonEnabled = true,
-                                PrimaryButtonText = "OK",
-                                Content = "There was no passer entry with the specified Record Number to update."
-                            };
-                            await failed.ShowAsync();
-                        }
+                        j.UpdatePasser(newPasser);
+                        
                     }
 
                     break;

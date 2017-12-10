@@ -42,9 +42,6 @@ namespace TermProject
 
         }
 
-        public Task<bool> UpdatePasser(Passer p)
-        {
-            return BusinessLayer.UpdatePasser(p);
-        }
+        
     }
 }

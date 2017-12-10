@@ -21,7 +21,7 @@ namespace TermProject
         void InsertPasser(Passer obj);
         Task<bool> Delete(Table table, int recordNumber);
         void DeletePasser(int recordNumber);
-        Task<bool> UpdatePasser(Passer p);
+        
         void Dispose();
 
     }

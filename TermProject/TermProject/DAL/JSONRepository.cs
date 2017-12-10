@@ -438,11 +438,10 @@ namespace TermProject
          
         }
 
-        public async Task<bool> UpdatePasser(Passer q)
+        public async void UpdatePasser(Passer q)
         {
             TransferToStorage("passers.json");
             string jsonText = "";
-            bool wasSuccessful = false;
             List<Passer> passers = new List<Passer>();
             Passer isThePasserThere = new Passer
             {
@@ -464,10 +463,26 @@ namespace TermProject
             }
 
             passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
-            isThePasserThere = (Passer)passers.Where(p => p.RecordNumber == q.RecordNumber);
+            foreach (Passer p in passers)
+            {
+                if (p.RecordNumber == q.RecordNumber)
+                {
+                    isThePasserThere = p;
+                }
+            }
+            
             if (isThePasserThere.RecordNumber == -999999)
             {
-                return wasSuccessful;
+                ContentDialog failed = new ContentDialog
+                {
+                    Title = "Failure",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The passer with the specified Record Number was not found."
+                };
+
+                await failed.ShowAsync();
+                return;
             }
             foreach (Passer p in passers)
             {
@@ -477,31 +492,31 @@ namespace TermProject
                     {
                         p.FirstName = q.FirstName;
                     }
-                    if (p.Interceptions != -1)
+                    if (q.Interceptions != -1)
                     {
                         p.Interceptions = q.Interceptions;
                     }
-                    if (p.LastName != "")
+                    if (q.LastName != "")
                     {
                         p.LastName = q.LastName;
                     }
-                    if (p.Score != -1)
+                    if (q.Score != -1)
                     {
                         p.Score = q.Score;
                     }
-                    if (p.TeamNameLong != "")
+                    if (q.TeamNameLong != "")
                     {
                         p.TeamNameLong = q.TeamNameLong;
                     }
-                    if (p.TeamNameShort != "")
+                    if (q.TeamNameShort != "")
                     {
                         p.TeamNameShort = q.TeamNameShort;
                     }
-                    if (p.Touchdowns != -1)
+                    if (q.Touchdowns != -1)
                     {
                         p.Touchdowns = q.Touchdowns;
                     }
-                    if (p.Yards != -999)
+                    if (q.Yards != -999)
                     {
                         p.Yards = q.Yards;
                     }
@@ -509,7 +524,7 @@ namespace TermProject
                 }
             }
 
-            File.WriteAllText(file.Path + "\\passers.json", "");
+            File.WriteAllText(file.Path, "");
 
             stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
             using (var outputStream = stream.GetOutputStreamAt(0))
@@ -517,13 +532,21 @@ namespace TermProject
                 using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
                 {
                     jsonText = JsonConvert.SerializeObject(passers, Formatting.Indented);
+                    dataWriter.WriteString(jsonText);
                     await dataWriter.StoreAsync();
                     await outputStream.FlushAsync();
                 }
             }
             stream.Dispose();
 
-            return wasSuccessful = true;
+            ContentDialog success = new ContentDialog
+            {
+                Title = "Success",
+                IsPrimaryButtonEnabled = true,
+                PrimaryButtonText = "OK",
+                Content = "The specified passer record was updated."
+            };
+            await success.ShowAsync();
         }
 
         public async Task<bool> Delete(Table table, int recordNumber)
