@@ -52,12 +52,7 @@ namespace TermProject
                 MyFrame.Navigate(typeof(ReceiverPage));
                 PageTitle.Text = "Receivers";
             }
-            else if (RushersListBoxItem.IsSelected)
-            {
-                BackButton.Visibility = Visibility.Visible;
-                MyFrame.Navigate(typeof(RusherPage));
-                PageTitle.Text = "Rushers";
-            }
+            
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-11T10:17:25.047</Modified>
+      <Modified>2017-12-11T10:29:20.092</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
-      <Modified>2017-12-11T10:17:24.841</Modified>
+      <Modified>2017-12-11T10:29:19.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -595,7 +595,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.xr.xml">
       <PackagePath>TermProject.xr.xml</PackagePath>
-      <Modified>2017-12-11T09:03:03.263</Modified>
+      <Modified>2017-12-11T10:29:19.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -604,11 +604,11 @@
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-11T10:01:59.861</Modified>
+      <Modified>2017-12-11T10:29:19.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
       <PackagePath>TermProject.exe</PackagePath>
-      <Modified>2017-12-11T10:17:25.044</Modified>
+      <Modified>2017-12-11T10:29:20.090</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

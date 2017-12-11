@@ -67,9 +67,9 @@
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Name" />
       <RootProperty Name="FontWeight" />
