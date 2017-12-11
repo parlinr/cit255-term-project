@@ -380,5 +380,56 @@ namespace TermProject
                     break;
             }
         }
+
+        private async void SortPassersButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var sortPasserDialogResult = await sortPasserDialog.ShowAsync();
+
+            switch (sortPasserDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    PasserSortData sData = new PasserSortData();
+                    if ((bool)scoreCheckbox.IsChecked)
+                    {
+                        sData.SortByScore = true;
+                    }
+                    if ((bool)yardsCheckbox.IsChecked)
+                    {
+                        sData.SortByYards = true;
+                    }
+                    if ((bool)touchdownsCheckbox.IsChecked)
+                    {
+                        sData.SortByTouchdowns = true;
+                    }
+                    
+                    BusinessLayer b = new BusinessLayer();
+                    ObservableCollection<Passer> sorted = b.SortPassers(sData, Passers);
+
+                    var passersForLoop = Passers.ToList();
+                    foreach (Passer q in passersForLoop)
+                    {
+                        Passers.Remove(q);
+                    }
+
+                    foreach (Passer p in sorted)
+                    {
+                        Passers.Add(p);
+                    }
+
+                    ContentDialog completed = new ContentDialog
+                    {
+                        Title = "Completed",
+                        IsPrimaryButtonEnabled = true,
+                        PrimaryButtonText = "OK",
+                        Content = "The selected sort has been completed."
+                    };
+                    await completed.ShowAsync();
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

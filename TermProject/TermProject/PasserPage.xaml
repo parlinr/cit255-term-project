@@ -251,6 +251,25 @@
             </StackPanel>
         </ContentDialog>
 
+        <ContentDialog x:Name="sortPasserDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Sort"
+                       SecondaryButtonText="Cancel"
+                       Title="Sort Passers">
+            <StackPanel>
+                <TextBlock>Check the boxes to select the sort criteria.</TextBlock>
+                <CheckBox x:Name="scoreCheckbox"
+                              Content="Score" />
+                <CheckBox x:Name="yardsCheckbox"
+                          Content="Yards" />
+                <CheckBox x:Name="touchdownsCheckbox"
+                          Content="Touchdowns" />
+                
+            </StackPanel>
+            
+        </ContentDialog>
+
 
 
         <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
@@ -274,6 +293,7 @@
             <Button Content="Update passer" Click="UpdatePasserButton_Clicked" />
             <Button Content="Select passer by Record Number" Click="SelectPasserByRecordNumberButton_Clicked" />
             <Button Content="Query passers" Click="QueryPassersButton_Clicked" />
+            <Button Content="Sort passers" Click="SortPassersButton_Clicked" />
 
         </GridView>
         

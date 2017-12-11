@@ -138,6 +138,7 @@
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\JSONRepository.cs" />
     <Compile Include="Models\PasserOperationData.cs" />
+    <Compile Include="Models\PasserSortData.cs" />
     <Compile Include="Models\SourceEnum.cs" />
     <Compile Include="Models\TableEnum.cs" />
     <Compile Include="MainPage.xaml.cs">

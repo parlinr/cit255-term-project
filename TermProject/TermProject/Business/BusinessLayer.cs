@@ -312,6 +312,50 @@ namespace TermProject
 
         }
 
+        public ObservableCollection<Passer> SortPassers(PasserSortData sData, ObservableCollection<Passer> passersToSort)
+        {
+            ObservableCollection<Passer> sorted = new ObservableCollection<Passer>();
+
+            if (sData.SortByScore == true && sData.SortByYards == false && sData.SortByTouchdowns == false)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Score).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+                
+            }
+            if (sData.SortByScore == false && sData.SortByYards == true && sData.SortByTouchdowns == false)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Yards).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+            if (sData.SortByScore == false && sData.SortByYards == false && sData.SortByTouchdowns == true)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Touchdowns).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+            if (sData.SortByScore == true && sData.SortByYards == true && sData.SortByTouchdowns == false)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Score).ThenByDescending(p => p.Yards).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+            if (sData.SortByScore == true && sData.SortByYards == false && sData.SortByTouchdowns == true)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Score).ThenByDescending(p => p.Touchdowns).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+            if (sData.SortByScore == false && sData.SortByYards == true && sData.SortByTouchdowns == true)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Yards).ThenByDescending(p => p.Touchdowns).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+            if (sData.SortByScore == true && sData.SortByYards == true && sData.SortByTouchdowns == true)
+            {
+                List<Passer> q = passersToSort.OrderByDescending(p => p.Score).ThenByDescending(p => p.Yards).ThenByDescending(p => p.Touchdowns).ToList();
+                sorted = new ObservableCollection<Passer>(q);
+            }
+
+            return sorted;
+        }
+
         
         #endregion
 
