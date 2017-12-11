@@ -132,7 +132,7 @@ namespace TermProject.TermProject_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[19];
             _typeNameTable[0] = "TermProject.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -147,9 +147,13 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeNameTable[11] = "TermProject.ViewModel";
             _typeNameTable[12] = "System.Collections.Generic.List`1<TermProject.Passer>";
             _typeNameTable[13] = "TermProject.ReceiverPage";
-            _typeNameTable[14] = "TermProject.RusherPage";
+            _typeNameTable[14] = "System.Collections.ObjectModel.ObservableCollection`1<TermProject.Receiver>";
+            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<TermProject.Receiver>";
+            _typeNameTable[16] = "TermProject.Receiver";
+            _typeNameTable[17] = "System.Collections.Generic.List`1<TermProject.Receiver>";
+            _typeNameTable[18] = "TermProject.RusherPage";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[19];
             _typeTable[0] = typeof(global::TermProject.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -164,7 +168,11 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeTable[11] = typeof(global::TermProject.ViewModel);
             _typeTable[12] = typeof(global::System.Collections.Generic.List<global::TermProject.Passer>);
             _typeTable[13] = typeof(global::TermProject.ReceiverPage);
-            _typeTable[14] = typeof(global::TermProject.RusherPage);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Receiver>);
+            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::TermProject.Receiver>);
+            _typeTable[16] = typeof(global::TermProject.Receiver);
+            _typeTable[17] = typeof(global::System.Collections.Generic.List<global::TermProject.Receiver>);
+            _typeTable[18] = typeof(global::TermProject.RusherPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -207,7 +215,11 @@ namespace TermProject.TermProject_XamlTypeInfo
         private object Activate_11_ViewModel() { return new global::TermProject.ViewModel(); }
         private object Activate_12_List() { return new global::System.Collections.Generic.List<global::TermProject.Passer>(); }
         private object Activate_13_ReceiverPage() { return new global::TermProject.ReceiverPage(); }
-        private object Activate_14_RusherPage() { return new global::TermProject.RusherPage(); }
+        private object Activate_14_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Receiver>(); }
+        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TermProject.Receiver>(); }
+        private object Activate_16_Receiver() { return new global::TermProject.Receiver(); }
+        private object Activate_17_List() { return new global::System.Collections.Generic.List<global::TermProject.Receiver>(); }
+        private object Activate_18_RusherPage() { return new global::TermProject.RusherPage(); }
         private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
@@ -224,6 +236,24 @@ namespace TermProject.TermProject_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
             var newItem = (global::TermProject.Passer)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_14_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Receiver>)instance;
+            var newItem = (global::TermProject.Receiver)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_15_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Receiver>)instance;
+            var newItem = (global::TermProject.Receiver)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Receiver>)instance;
+            var newItem = (global::TermProject.Receiver)item;
             collection.Add(newItem);
         }
 
@@ -326,13 +356,53 @@ namespace TermProject.TermProject_XamlTypeInfo
             case 13:   //  TermProject.ReceiverPage
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_13_ReceiverPage;
+                userType.AddMemberName("Receivers");
+                userType.AddMemberName("viewmodel");
+                userType.AddMemberName("ReceiversList");
+                userType.AddMemberName("AReceiver");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  TermProject.RusherPage
+            case 14:   //  System.Collections.ObjectModel.ObservableCollection`1<TermProject.Receiver>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<TermProject.Receiver>"));
+                userType.CollectionAdd = VectorAdd_14_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  System.Collections.ObjectModel.Collection`1<TermProject.Receiver>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_Collection;
+                userType.CollectionAdd = VectorAdd_15_Collection;
+                xamlType = userType;
+                break;
+
+            case 16:   //  TermProject.Receiver
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_16_Receiver;
+                userType.AddMemberName("Score");
+                userType.AddMemberName("LastName");
+                userType.AddMemberName("FirstName");
+                userType.AddMemberName("TeamNameLong");
+                userType.AddMemberName("TeamNameShort");
+                userType.AddMemberName("Yards");
+                userType.AddMemberName("Touchdowns");
+                userType.AddMemberName("RecordNumber");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  System.Collections.Generic.List`1<TermProject.Receiver>
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_17_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 18:   //  TermProject.RusherPage
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_RusherPage;
+                userType.Activator = Activate_18_RusherPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -471,6 +541,126 @@ namespace TermProject.TermProject_XamlTypeInfo
             var that = (global::TermProject.PasserPage)instance;
             that.APasser = (global::TermProject.Passer)Value;
         }
+        private object get_13_ReceiverPage_Receivers(object instance)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            return that.Receivers;
+        }
+        private void set_13_ReceiverPage_Receivers(object instance, object Value)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            that.Receivers = (global::System.Collections.ObjectModel.ObservableCollection<global::TermProject.Receiver>)Value;
+        }
+        private object get_14_Receiver_Score(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.Score;
+        }
+        private void set_14_Receiver_Score(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.Score = (global::System.Double)Value;
+        }
+        private object get_15_Receiver_LastName(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.LastName;
+        }
+        private void set_15_Receiver_LastName(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.LastName = (global::System.String)Value;
+        }
+        private object get_16_Receiver_FirstName(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.FirstName;
+        }
+        private void set_16_Receiver_FirstName(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.FirstName = (global::System.String)Value;
+        }
+        private object get_17_Receiver_TeamNameLong(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.TeamNameLong;
+        }
+        private void set_17_Receiver_TeamNameLong(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.TeamNameLong = (global::System.String)Value;
+        }
+        private object get_18_Receiver_TeamNameShort(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.TeamNameShort;
+        }
+        private void set_18_Receiver_TeamNameShort(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.TeamNameShort = (global::System.String)Value;
+        }
+        private object get_19_Receiver_Yards(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.Yards;
+        }
+        private void set_19_Receiver_Yards(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.Yards = (global::System.Int32)Value;
+        }
+        private object get_20_Receiver_Touchdowns(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.Touchdowns;
+        }
+        private void set_20_Receiver_Touchdowns(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.Touchdowns = (global::System.Int32)Value;
+        }
+        private object get_21_Receiver_RecordNumber(object instance)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            return that.RecordNumber;
+        }
+        private void set_21_Receiver_RecordNumber(object instance, object Value)
+        {
+            var that = (global::TermProject.Receiver)instance;
+            that.RecordNumber = (global::System.Int32)Value;
+        }
+        private object get_22_ReceiverPage_viewmodel(object instance)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            return that.viewmodel;
+        }
+        private void set_22_ReceiverPage_viewmodel(object instance, object Value)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            that.viewmodel = (global::TermProject.ViewModel)Value;
+        }
+        private object get_23_ReceiverPage_ReceiversList(object instance)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            return that.ReceiversList;
+        }
+        private void set_23_ReceiverPage_ReceiversList(object instance, object Value)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            that.ReceiversList = (global::System.Collections.Generic.List<global::TermProject.Receiver>)Value;
+        }
+        private object get_24_ReceiverPage_AReceiver(object instance)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            return that.AReceiver;
+        }
+        private void set_24_ReceiverPage_AReceiver(object instance, object Value)
+        {
+            var that = (global::TermProject.ReceiverPage)instance;
+            that.AReceiver = (global::TermProject.Receiver)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -556,6 +746,78 @@ namespace TermProject.TermProject_XamlTypeInfo
                 xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "APasser", "TermProject.Passer");
                 xamlMember.Getter = get_12_PasserPage_APasser;
                 xamlMember.Setter = set_12_PasserPage_APasser;
+                break;
+            case "TermProject.ReceiverPage.Receivers":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.ReceiverPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Receivers", "System.Collections.ObjectModel.ObservableCollection`1<TermProject.Receiver>");
+                xamlMember.Getter = get_13_ReceiverPage_Receivers;
+                xamlMember.Setter = set_13_ReceiverPage_Receivers;
+                break;
+            case "TermProject.Receiver.Score":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Score", "Double");
+                xamlMember.Getter = get_14_Receiver_Score;
+                xamlMember.Setter = set_14_Receiver_Score;
+                break;
+            case "TermProject.Receiver.LastName":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "LastName", "String");
+                xamlMember.Getter = get_15_Receiver_LastName;
+                xamlMember.Setter = set_15_Receiver_LastName;
+                break;
+            case "TermProject.Receiver.FirstName":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "FirstName", "String");
+                xamlMember.Getter = get_16_Receiver_FirstName;
+                xamlMember.Setter = set_16_Receiver_FirstName;
+                break;
+            case "TermProject.Receiver.TeamNameLong":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "TeamNameLong", "String");
+                xamlMember.Getter = get_17_Receiver_TeamNameLong;
+                xamlMember.Setter = set_17_Receiver_TeamNameLong;
+                break;
+            case "TermProject.Receiver.TeamNameShort":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "TeamNameShort", "String");
+                xamlMember.Getter = get_18_Receiver_TeamNameShort;
+                xamlMember.Setter = set_18_Receiver_TeamNameShort;
+                break;
+            case "TermProject.Receiver.Yards":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Yards", "Int32");
+                xamlMember.Getter = get_19_Receiver_Yards;
+                xamlMember.Setter = set_19_Receiver_Yards;
+                break;
+            case "TermProject.Receiver.Touchdowns":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "Touchdowns", "Int32");
+                xamlMember.Getter = get_20_Receiver_Touchdowns;
+                xamlMember.Setter = set_20_Receiver_Touchdowns;
+                break;
+            case "TermProject.Receiver.RecordNumber":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.Receiver");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "RecordNumber", "Int32");
+                xamlMember.Getter = get_21_Receiver_RecordNumber;
+                xamlMember.Setter = set_21_Receiver_RecordNumber;
+                break;
+            case "TermProject.ReceiverPage.viewmodel":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.ReceiverPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "viewmodel", "TermProject.ViewModel");
+                xamlMember.Getter = get_22_ReceiverPage_viewmodel;
+                xamlMember.Setter = set_22_ReceiverPage_viewmodel;
+                break;
+            case "TermProject.ReceiverPage.ReceiversList":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.ReceiverPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "ReceiversList", "System.Collections.Generic.List`1<TermProject.Receiver>");
+                xamlMember.Getter = get_23_ReceiverPage_ReceiversList;
+                xamlMember.Setter = set_23_ReceiverPage_ReceiversList;
+                break;
+            case "TermProject.ReceiverPage.AReceiver":
+                userType = (global::TermProject.TermProject_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TermProject.ReceiverPage");
+                xamlMember = new global::TermProject.TermProject_XamlTypeInfo.XamlMember(this, "AReceiver", "TermProject.Receiver");
+                xamlMember.Getter = get_24_ReceiverPage_AReceiver;
+                xamlMember.Setter = set_24_ReceiverPage_AReceiver;
                 break;
             }
             return xamlMember;

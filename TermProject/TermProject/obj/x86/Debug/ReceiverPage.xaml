@@ -1,14 +1,325 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="TermProject.ReceiverPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:TermProject"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:TermProject"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <DataTemplate x:Key="ReceiverListDataTemplate"                           >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    
+
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="{Binding Score}"/>
+                <TextBlock Grid.Column="1" Text="{Binding LastName}"/>
+                <TextBlock Grid.Column="2" Text="{Binding FirstName}"/>
+                <TextBlock Grid.Column="3" Text="{Binding TeamNameLong}"/>
+                <TextBlock Grid.Column="4" Text="{Binding TeamNameShort}"/>
+                <TextBlock Grid.Column="5" Text="{Binding Yards}"/>
+                <TextBlock Grid.Column="6" Text="{Binding Touchdowns}"/>
+                <TextBlock Grid.Column="7" Text="{Binding RecordNumber}"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="50,0,0,0">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+
+        <ContentDialog x:ConnectionId='2' x:Name="addReceiverDialog"
+                       PrimaryButtonText="Add"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       SecondaryButtonText="Cancel"
+                       Title="Add Receiver">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWholeWords">
+                        Fill out the fields below to create a new receiver.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
+                        <TextBox x:ConnectionId='43'  Name="scoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
+                        <TextBox x:ConnectionId='42'  Name="lastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
+                        <TextBox x:ConnectionId='41' Name="firstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
+                        <TextBox x:ConnectionId='40' Name="teamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Team Name Short</TextBlock>
+                        <TextBox x:ConnectionId='39' Name="teamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
+                        <TextBox x:ConnectionId='38' Name="yardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
+                        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='37' Name="touchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
+                        <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
+                        <TextBox x:ConnectionId='36' Name="recordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='3' x:Name="updateReceiverDialog"
+                       PrimaryButtonText="Update"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       SecondaryButtonText="Cancel"
+                       Title="Update Receiver">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWholeWords">
+                        Fill out the fields below to update a receiver.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
+                        <TextBox x:ConnectionId='35'  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
+                        <TextBox x:ConnectionId='34'  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
+                        <TextBox x:ConnectionId='33' Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
+                        <TextBox x:ConnectionId='32' Name="updateTeamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Team Name Short</TextBlock>
+                        <TextBox x:ConnectionId='31' Name="updateTeamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
+                        <TextBox x:ConnectionId='30' Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
+                        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='29' Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
+                        <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
+                        <TextBox x:ConnectionId='28' Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='4' x:Name="queryReceiverDialog"
+                       PrimaryButtonText="Search"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       SecondaryButtonText="Cancel"
+                       Title="Query Receivers">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWholeWords">
+                        Fill out the fields below to specify the receiver records to look for.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Minimum Score</TextBlock>
+                        <TextBox x:ConnectionId='27'  Name="queryMinScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Maximum Score</TextBlock>
+                        <TextBox x:ConnectionId='26'  Name="queryMaxScoreTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">Minimum Yards</TextBlock>
+                        <TextBox x:ConnectionId='25' Name="queryMinYardsTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Maximum Yards</TextBlock>
+                        <TextBox x:ConnectionId='24' Name="queryMaxYardsTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Minimum Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='23' Name="queryMinTouchdownsTextBox" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Maximum Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='22' Name="queryMaxTouchdownsTextBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+
+
+                </Grid>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='5' x:Name="deleteReceiverDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Delete"
+                       SecondaryButtonText="Cancel"
+                       Title="Delete Receiver">
+            <StackPanel>
+                <TextBlock>Enter the receiver's Record Number in the box to delete the receiver record.</TextBlock>
+                <TextBox x:ConnectionId='21' Name="recordNumberInput"></TextBox>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='6' x:Name="selectReceiverByRecordNumberDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Select"
+                       SecondaryButtonText="Cancel"
+                       Title="Select Receiver by Record Number">
+            <StackPanel>
+                <TextBlock>Enter the receiver's Record Number in the box to select the receiver record.</TextBlock>
+                <TextBox x:ConnectionId='20' Name="selectRecordNumberInput"></TextBox>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='7' x:Name="sortReceiverDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Sort"
+                       SecondaryButtonText="Cancel"
+                       Title="Sort Receivers">
+            <StackPanel>
+                <TextBlock>Check the boxes to select the sort criteria.</TextBlock>
+                <CheckBox x:ConnectionId='17' x:Name="scoreCheckbox"
+                              Content="Score" />
+                <CheckBox x:ConnectionId='18' x:Name="yardsCheckbox"
+                          Content="Yards" />
+                <CheckBox x:ConnectionId='19' x:Name="touchdownsCheckbox"
+                          Content="Touchdowns" />
+
+            </StackPanel>
+
+        </ContentDialog>
+
+
+
+        <GridView x:ConnectionId='8' ItemTemplate="{StaticResource ReceiverListDataTemplate}"
+                                                               
+                  Grid.Column="0">
+            <GridView.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
+                    <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
+                    
+                    <TextBlock Grid.Column="7" Text="Record Number" Padding="0,0,20,0"/>
+                </StackPanel>
+            </GridView.Header>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+
+
+        </GridView>
+        <GridView Grid.Column="1" RenderTransformOrigin="0.52,0.256" Margin="0">
+            <Button x:ConnectionId='9'  Content="Get all receivers"                                       />
+
+            <Button x:ConnectionId='10'  Content="Clear screen"                                   />
+
+            <Button x:ConnectionId='11'  Content="Add receiver"                                   />
+
+            <Button x:ConnectionId='12' Content="Delete receiver"                                      Width="113" />
+
+            <Button x:ConnectionId='13'  Content="Update receiver"                                      />
+
+            <Button x:ConnectionId='14'  Content="Select Record"                                                    Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+
+            <Button x:ConnectionId='15'  Content="Query receivers"                                      RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
+
+            <Button x:ConnectionId='16'  Content="Sort receivers"                                     />
+
+        </GridView>
+
+
+
+
+
+
+
+
+
 
     </Grid>
 </Page>
+
+
 

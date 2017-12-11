@@ -15,8 +15,8 @@ namespace TermProject
         Task<List<Passer>> GetAllPassersAsList();
         void GetAllRushers();
         void GetAllRushersAsList();
-        void GetAllReceivers();
-        void GetAllReceiversAsList();
+        Task<ObservableCollection<Receiver>> GetAllReceivers();
+        Task<List<Receiver>> GetAllReceiversAsList();
         void SelectByRecordNumber(int recordNumber, Table table);
         void InsertPasser(Passer obj);
         Task<bool> Delete(Table table, int recordNumber);

@@ -16,9 +16,7 @@ namespace TermProject
     public class JSONRepository : IRepository
     {
         
-        //With UWP's subset of .NET, we cannot have: 1) return types, or 2) out or
-        //ref keywords in async methods (required for file IO in UWP). Intermediary
-        //properties will have to do.
+        
         public ObservableCollection<Passer> AllPassers { get; set; }
         public ObservableCollection<Rusher> AllRushers { get; set; }
         public ObservableCollection<Receiver> AllReceivers { get; set; }
@@ -104,6 +102,50 @@ namespace TermProject
             passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
             ObservableCollection<Passer> collection = new ObservableCollection<Passer>();
             foreach (Passer p in passers)
+            {
+                if (p.RecordNumber == recordNumber)
+                {
+                    collection.Add(p);
+                }
+            }
+
+            //AllPassers = collection;
+            return collection;
+        }
+
+        public async Task<ObservableCollection<Receiver>> GetReceiverByRecordNumber(int recordNumber)
+        {
+            List<Receiver> receivers = new List<Receiver>();
+            string jsonText;
+
+            //copy JSON file to AppData folder if it doesn't already exist
+            TransferToStorage("receivers.json");
+
+
+
+            //specify where the target (JSON) file is
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\receivers.json";
+            Windows.Storage.StorageFile receiversFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            //build the stream and write it to a string
+            var stream = await receiversFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            //serialize the string
+
+            receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
+            ObservableCollection<Receiver> collection = new ObservableCollection<Receiver>();
+            foreach (Receiver p in receivers)
             {
                 if (p.RecordNumber == recordNumber)
                 {
@@ -210,7 +252,7 @@ namespace TermProject
             AllRushersList = rushers;
         }
 
-        public async void GetAllReceivers()
+        public async Task<ObservableCollection<Receiver>> GetAllReceivers()
         {
             List<Receiver> receivers = new List<Receiver>();
             string jsonText;
@@ -239,9 +281,10 @@ namespace TermProject
             receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
             ObservableCollection<Receiver> collection = new ObservableCollection<Receiver>(receivers);
             AllReceivers = collection;
+            return collection;
         }
 
-        public async void GetAllReceiversAsList()
+        public async Task<List<Receiver>> GetAllReceiversAsList()
         {
             List<Receiver> receivers = new List<Receiver>();
             string jsonText;
@@ -269,6 +312,8 @@ namespace TermProject
             //serialize the string
             receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
             AllReceiversList = receivers;
+            ObservableCollection<Receiver> returnedCollection = new ObservableCollection<Receiver>(receivers);
+            return receivers;
         }
 
         public async void SelectByRecordNumber(int recordNumber, Table table)
@@ -649,6 +694,113 @@ namespace TermProject
             await success.ShowAsync();
         }
 
+        public async void UpdateReceiver(Receiver q)
+        {
+            TransferToStorage("receivers.json");
+            string jsonText = "";
+            List<Receiver> receivers = new List<Receiver>();
+            Receiver isTheReceiverThere = new Receiver
+            {
+                RecordNumber = -999999
+            };
+
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            Windows.Storage.StorageFile file = await storageFolder.GetFileAsync("receivers.json");
+
+            var stream = await file.OpenAsync(FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
+            foreach (Receiver p in receivers)
+            {
+                if (p.RecordNumber == q.RecordNumber)
+                {
+                    isTheReceiverThere = p;
+                }
+            }
+
+            if (isTheReceiverThere.RecordNumber == -999999)
+            {
+                ContentDialog failed = new ContentDialog
+                {
+                    Title = "Failure",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The receiver with the specified Record Number was not found."
+                };
+
+                await failed.ShowAsync();
+                return;
+            }
+            foreach (Receiver p in receivers)
+            {
+                if (p.RecordNumber == q.RecordNumber)
+                {
+                    if (q.FirstName != "")
+                    {
+                        p.FirstName = q.FirstName;
+                    }
+                    if (q.LastName != "")
+                    {
+                        p.LastName = q.LastName;
+                    }
+                    if (q.Score != -1)
+                    {
+                        p.Score = q.Score;
+                    }
+                    if (q.TeamNameLong != "")
+                    {
+                        p.TeamNameLong = q.TeamNameLong;
+                    }
+                    if (q.TeamNameShort != "")
+                    {
+                        p.TeamNameShort = q.TeamNameShort;
+                    }
+                    if (q.Touchdowns != -1)
+                    {
+                        p.Touchdowns = q.Touchdowns;
+                    }
+                    if (q.Yards != -999)
+                    {
+                        p.Yards = q.Yards;
+                    }
+
+                }
+            }
+
+            File.WriteAllText(file.Path, "");
+
+            stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(0))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    jsonText = JsonConvert.SerializeObject(receivers, Formatting.Indented);
+                    dataWriter.WriteString(jsonText);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose();
+
+            ContentDialog success = new ContentDialog
+            {
+                Title = "Success",
+                IsPrimaryButtonEnabled = true,
+                PrimaryButtonText = "OK",
+                Content = "The specified receiver record was updated."
+            };
+            await success.ShowAsync();
+        }
+
         public async Task<bool> Delete(Table table, int recordNumber)
         {
             string ext = "";
@@ -916,6 +1068,87 @@ namespace TermProject
                 IsPrimaryButtonEnabled = true,
                 PrimaryButtonText = "OK",
                 Content = "The specified passer record was deleted."
+            };
+            await success.ShowAsync();
+
+        }
+
+        public async void DeleteReceiver(int recordNumber)
+        {
+            TransferToStorage("receivers.json");
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            string jsonText = "";
+            List<Receiver> receivers = new List<Receiver>();
+            Receiver receiverToDelete = new Receiver
+            {
+                Yards = -99999
+            };
+            string comma = ",";
+            string rightBracket = "]";
+            var pth = root + "\\receivers.json";
+            Windows.Storage.StorageFile receiversFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            var stream = await receiversFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+
+            receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
+            foreach (Receiver p in receivers)
+            {
+                if (p.RecordNumber == recordNumber)
+                {
+                    receiverToDelete = p;
+                }
+            }
+            if (receiverToDelete.Yards == -99999)
+            {
+                ContentDialog failed = new ContentDialog
+                {
+                    Title = "Failure",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The receiver with the specified Record Number was not found."
+                };
+
+                await failed.ShowAsync();
+                return;
+
+            }
+
+            receivers.Remove(receiverToDelete);
+
+            jsonText = JsonConvert.SerializeObject(receivers, Formatting.Indented);
+
+            File.WriteAllText(pth, "");
+
+            stream = await receiversFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+            using (var outputStream = stream.GetOutputStreamAt(0))
+            {
+                using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
+                {
+                    dataWriter.WriteString(jsonText);
+                    await dataWriter.StoreAsync();
+                    await outputStream.FlushAsync();
+                }
+            }
+            stream.Dispose();
+
+            ContentDialog success = new ContentDialog
+            {
+                Title = "Success",
+                IsPrimaryButtonEnabled = true,
+                PrimaryButtonText = "OK",
+                Content = "The specified receiver record was deleted."
             };
             await success.ShowAsync();
 

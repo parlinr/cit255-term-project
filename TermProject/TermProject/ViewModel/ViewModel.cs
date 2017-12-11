@@ -25,9 +25,22 @@ namespace TermProject
             return returnedCollection;
         }
 
+        public async Task<ObservableCollection<Receiver>> GetAllReceivers()
+        {
+
+            ObservableCollection<Receiver> returnedCollection = new ObservableCollection<Receiver>();
+            returnedCollection = await BusinessLayer.GetAllReceivers();
+            return returnedCollection;
+        }
+
         public void InsertPasser(Passer p)
         {
             BusinessLayer.InsertPasser(p);
+        }
+
+        public void InsertReceiver(Receiver p)
+        {
+            BusinessLayer.InsertReceiver(p);
         }
 
         public Task<bool> Delete(Table table, int recordNumber)
