@@ -22,6 +22,7 @@ namespace TermProject
         Task<bool> Delete(Table table, int recordNumber);
         void DeletePasser(int recordNumber);
         
+        
         void Dispose();
 
     }

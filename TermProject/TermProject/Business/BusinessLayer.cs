@@ -14,6 +14,7 @@ namespace TermProject
         #endregion
 
         #region METHODS
+        /*
         public ObservableCollection<Passer> QueryPassersByScore(int minScore, int maxScore, out List<Passer> passerReturnList)
         {
             JSONRepository repo = new JSONRepository();
@@ -47,7 +48,7 @@ namespace TermProject
 
             return queryResult;
         }
-
+        
         public ObservableCollection<Passer> SortPassersByScore(ObservableCollection<Passer> pageOutput)
         {
             return (ObservableCollection<Passer>)pageOutput.OrderBy(p => p.Score);
@@ -62,7 +63,7 @@ namespace TermProject
         {
             return (ObservableCollection<Rusher>)pageOutput.OrderBy(p => p.Score);
         }
-
+        */
         public async Task<ObservableCollection<Passer>> GetAllPassers()
         {
             JSONRepository j = new JSONRepository();
