@@ -13,7 +13,7 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100"/>
-                    
+
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="100"/>
@@ -22,7 +22,7 @@
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="100"/>
-                    
+
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="{Binding Score}"/>
                 <TextBlock Grid.Column="1" Text="{Binding LastName}"/>
@@ -37,15 +37,16 @@
         </DataTemplate>
     </Page.Resources>
 
-    
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="50,0,0,0">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition  Width="*" />
         </Grid.ColumnDefinitions>
-
         
+
+
         <ContentDialog x:Name="addPasserDialog"
                        PrimaryButtonText="Add"
                        IsPrimaryButtonEnabled="True"
@@ -221,7 +222,7 @@
                         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Maximum Touchdowns</TextBlock>
                         <TextBox Name="queryMaxTouchdownsTextBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
-                    
+
 
                 </Grid>
             </StackPanel>
@@ -234,8 +235,8 @@
                        SecondaryButtonText="Cancel"
                        Title="Delete Passer">
             <StackPanel>
-            <TextBlock>Enter the passer's Record Number in the box to delete the passer record.</TextBlock>
-            <TextBox Name="recordNumberInput"></TextBox>
+                <TextBlock>Enter the passer's Record Number in the box to delete the passer record.</TextBlock>
+                <TextBox Name="recordNumberInput"></TextBox>
             </StackPanel>
         </ContentDialog>
 
@@ -265,9 +266,9 @@
                           Content="Yards" />
                 <CheckBox x:Name="touchdownsCheckbox"
                           Content="Touchdowns" />
-                
+
             </StackPanel>
-            
+
         </ContentDialog>
 
 
@@ -275,7 +276,19 @@
         <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
                   ItemsSource="{x:Bind Passers, Mode=OneWay}"
                   Grid.Column="0">
-
+            <GridView.Header>
+                <StackPanel Orientation="Horizontal">
+                <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="7" Text="Interceptions" Padding="0,0,20,0"/>
+                <TextBlock Grid.Column="8" Text="Record Number" Padding="0,0,20,0"/>
+                </StackPanel>
+            </GridView.Header>
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
 
@@ -285,19 +298,26 @@
 
 
         </GridView>
-        <GridView Grid.Column="1">
-            <Button Content="Get all passers" Click="GetAllPassersButton_Clicked" />
-            <Button Content="Clear screen" Click="ClearScreenButton_Clicked" />
-            <Button Content="Add passer" Click="AddPasserButton_Clicked" />
-            <Button Content="Delete passer" Click="DeletePasserButton_Clicked" />
-            <Button Content="Update passer" Click="UpdatePasserButton_Clicked" />
-            <Button Content="Select passer by Record Number" Click="SelectPasserByRecordNumberButton_Clicked" />
-            <Button Content="Query passers" Click="QueryPassersButton_Clicked" />
-            <Button Content="Sort passers" Click="SortPassersButton_Clicked" />
+        <GridView Grid.Column="1" RenderTransformOrigin="0.52,0.256" Margin="0">
+            <Button  Content="Get all passers" Click="GetAllPassersButton_Clicked" />
+
+            <Button  Content="Clear screen" Click="ClearScreenButton_Clicked" />
+
+            <Button  Content="Add passer" Click="AddPasserButton_Clicked" />
+
+            <Button Content="Delete passer" Click="DeletePasserButton_Clicked" Width="113" />
+
+            <Button  Content="Update passer" Click="UpdatePasserButton_Clicked" />
+
+            <Button  Content="Select Record" Click="SelectPasserByRecordNumberButton_Clicked" Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+
+            <Button  Content="Query passers" Click="QueryPassersButton_Clicked" RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
+
+            <Button  Content="Sort passers" Click="SortPassersButton_Clicked" />
 
         </GridView>
-        
-       
+
+
 
 
 

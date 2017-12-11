@@ -30,7 +30,7 @@ namespace TermProject
     {
         
 
-        //the app pages need an ObservableCollection, but the operations I want only work on Lists
+        
         public ObservableCollection<Passer> Passers { get; set; }
         public ViewModel viewmodel { get; set; }
         public List<Passer> PassersList { get; set; }
@@ -39,7 +39,7 @@ namespace TermProject
 
         public PasserPage()
         {
-            //Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
+            
             this.InitializeComponent();
             Passers = new ObservableCollection<Passer>();
             viewmodel = new ViewModel();
@@ -59,12 +59,7 @@ namespace TermProject
                 Passers.Add(p);
             }
                    
-            //Passers = (ObservableCollection<Passer>)test;
-            //Passer p = new Passer { FirstName = "Fred", LastName = "Fred", Interceptions = 44, RecordNumber = 1000000, Touchdowns = 3432, Yards = 45434 };
-            //Passers.Add(p);
-
-
-        }
+         }
 
         private void ClearScreenButton_Clicked(object sender, RoutedEventArgs e)
         {

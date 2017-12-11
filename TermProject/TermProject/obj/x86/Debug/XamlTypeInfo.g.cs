@@ -132,7 +132,7 @@ namespace TermProject.TermProject_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "TermProject.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -146,8 +146,10 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeNameTable[10] = "Int32";
             _typeNameTable[11] = "TermProject.ViewModel";
             _typeNameTable[12] = "System.Collections.Generic.List`1<TermProject.Passer>";
+            _typeNameTable[13] = "TermProject.ReceiverPage";
+            _typeNameTable[14] = "TermProject.RusherPage";
 
-            _typeTable = new global::System.Type[13];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::TermProject.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -161,6 +163,8 @@ namespace TermProject.TermProject_XamlTypeInfo
             _typeTable[10] = typeof(global::System.Int32);
             _typeTable[11] = typeof(global::TermProject.ViewModel);
             _typeTable[12] = typeof(global::System.Collections.Generic.List<global::TermProject.Passer>);
+            _typeTable[13] = typeof(global::TermProject.ReceiverPage);
+            _typeTable[14] = typeof(global::TermProject.RusherPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,6 +206,8 @@ namespace TermProject.TermProject_XamlTypeInfo
         private object Activate_7_Passer() { return new global::TermProject.Passer(); }
         private object Activate_11_ViewModel() { return new global::TermProject.ViewModel(); }
         private object Activate_12_List() { return new global::System.Collections.Generic.List<global::TermProject.Passer>(); }
+        private object Activate_13_ReceiverPage() { return new global::TermProject.ReceiverPage(); }
+        private object Activate_14_RusherPage() { return new global::TermProject.RusherPage(); }
         private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TermProject.Passer>)instance;
@@ -314,6 +320,20 @@ namespace TermProject.TermProject_XamlTypeInfo
                 userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CollectionAdd = VectorAdd_12_List;
                 userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  TermProject.ReceiverPage
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_ReceiverPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  TermProject.RusherPage
+                userType = new global::TermProject.TermProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_RusherPage;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
             }

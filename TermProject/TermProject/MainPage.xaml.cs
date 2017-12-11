@@ -28,7 +28,45 @@ namespace TermProject
         {
             
             this.InitializeComponent();
+            BackButton.Visibility = Visibility.Collapsed;
             MyFrame.Navigate(typeof(PasserPage));
+            PassersListBoxItem.IsSelected = true;
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (PassersListBoxItem.IsSelected)
+            {
+                BackButton.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(PasserPage));
+                PageTitle.Text = "Passers";
+            }
+            else if (ReceiversListBoxItem.IsSelected)
+            {
+                BackButton.Visibility = Visibility.Visible;
+                MyFrame.Navigate(typeof(ReceiverPage));
+                PageTitle.Text = "Receivers";
+            }
+            else if (RushersListBoxItem.IsSelected)
+            {
+                BackButton.Visibility = Visibility.Visible;
+                MyFrame.Navigate(typeof(RusherPage));
+                PageTitle.Text = "Rushers";
+            }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyFrame.CanGoBack)
+            {
+                MyFrame.GoBack();
+                PassersListBoxItem.IsSelected = true;
+            }
         }
     }
 }
