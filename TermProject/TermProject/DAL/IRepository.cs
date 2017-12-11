@@ -12,7 +12,7 @@ namespace TermProject
         //all of the return types are void because all IO in UWP uses
         //async methods
         Task<ObservableCollection<Passer>> GetAllPassers();
-        void GetAllPassersAsList();
+        Task<List<Passer>> GetAllPassersAsList();
         void GetAllRushers();
         void GetAllRushersAsList();
         void GetAllReceivers();

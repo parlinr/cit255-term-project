@@ -95,11 +95,11 @@ namespace TermProject
             
         }
 
-        public ObservableCollection<Passer> QueryPassers(PasserOperationData opData)
+        public async Task<ObservableCollection<Passer>> QueryPassers(PasserOperationData opData)
         {
             JSONRepository j = new JSONRepository();
-            j.GetAllPassersAsList();
-            List<Passer> passers = j.AllPassersList;
+            
+            List<Passer> passers = await j.GetAllPassersAsList();
             List<Passer> queryResult = new List<Passer>();
             
 

@@ -351,7 +351,7 @@ namespace TermProject
                     }
 
                     BusinessLayer b = new BusinessLayer();
-                    ObservableCollection<Passer> results = b.QueryPassers(opData);
+                    ObservableCollection<Passer> results = await b.QueryPassers(opData);
 
                     var passersForLoop = Passers.ToList();
                     foreach (Passer q in passersForLoop)

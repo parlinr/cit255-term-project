@@ -115,7 +115,7 @@ namespace TermProject
             return collection;
         }
 
-        public async void GetAllPassersAsList()
+        public async Task<List<Passer>> GetAllPassersAsList()
         {
             List<Passer> passers = new List<Passer>();
             string jsonText;
@@ -146,7 +146,7 @@ namespace TermProject
 
             //serialize the string
             passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
-            AllPassersList = passers;
+            return passers;
         }
 
         public async void GetAllRushers()
