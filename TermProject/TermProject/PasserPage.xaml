@@ -115,7 +115,7 @@
                        IsPrimaryButtonEnabled="True"
                        IsSecondaryButtonEnabled="True"
                        SecondaryButtonText="Cancel"
-                       Title="Add Passer">
+                       Title="Update Passer">
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -185,9 +185,21 @@
             <TextBox Name="recordNumberInput"></TextBox>
             </StackPanel>
         </ContentDialog>
-        
-        
-        
+
+        <ContentDialog x:Name="selectPasserByRecordNumberDialog"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       PrimaryButtonText="Select"
+                       SecondaryButtonText="Cancel"
+                       Title="Select Passer by Record Number">
+            <StackPanel>
+                <TextBlock>Enter the passer's Record Number in the box to select the passer record.</TextBlock>
+                <TextBox Name="selectRecordNumberInput"></TextBox>
+            </StackPanel>
+        </ContentDialog>
+
+
+
         <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
                   ItemsSource="{x:Bind Passers, Mode=OneWay}"
                   Grid.Column="0">
@@ -207,6 +219,8 @@
             <Button Content="Add passer" Click="AddPasserButton_Clicked" />
             <Button Content="Delete passer" Click="DeletePasserButton_Clicked" />
             <Button Content="Update passer" Click="UpdatePasserButton_Clicked" />
+            <Button Content="Select passer by Record Number" Click="SelectPasserByRecordNumberButton_Clicked" />
+            
         </GridView>
         
        

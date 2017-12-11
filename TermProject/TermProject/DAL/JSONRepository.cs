@@ -70,6 +70,51 @@ namespace TermProject
             return collection;
         }
 
+        public async Task<ObservableCollection<Passer>> GetPasserByRecordNumber(int recordNumber)
+        {
+            List<Passer> passers = new List<Passer>();
+            string jsonText;
+
+            //copy JSON file to AppData folder if it doesn't already exist
+            TransferToStorage("passers.json");
+
+
+
+            //specify where the target (JSON) file is
+            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            string root = folder.Path;
+            var pth = root + "\\passers.json";
+            //string pth = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, passerFile);
+            Windows.Storage.StorageFile passersFile = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
+
+            //build the stream and write it to a string
+            var stream = await passersFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            ulong size = stream.Size;
+            using (var inputStream = stream.GetInputStreamAt(0))
+            {
+                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
+                {
+                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
+                    jsonText = dataReader.ReadString(numBytesLoaded);
+                }
+            }
+
+            //serialize the string
+
+            passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+            ObservableCollection<Passer> collection = new ObservableCollection<Passer>();
+            foreach (Passer p in passers)
+            {
+                if (p.RecordNumber == recordNumber)
+                {
+                    collection.Add(p);
+                }
+            }
+
+            //AllPassers = collection;
+            return collection;
+        }
+
         public async void GetAllPassersAsList()
         {
             List<Passer> passers = new List<Passer>();
@@ -238,8 +283,8 @@ namespace TermProject
             string jsonText = "";
             if (table == Table.Passers)
             {
-                ext = @"\passers.json";
-                TransferToStorage("passers.json");
+                GetAllPassersAsList();
+                passers = AllPassersList;
             }
             else if (table == Table.Receivers)
             {
@@ -252,53 +297,108 @@ namespace TermProject
                 TransferToStorage("rushers.json");
             }
 
-            //string pth = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, ext);
-            Windows.Storage.StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            string root = folder.Path;
-            string pth = root + ext;
-            Windows.Storage.StorageFile File = await Windows.Storage.StorageFile.GetFileFromPathAsync(pth);
-
-            //build the stream and write it to a string
-            var stream = await File.OpenAsync(Windows.Storage.FileAccessMode.Read);
-            ulong size = stream.Size;
-            using (var inputStream = stream.GetInputStreamAt(0))
-            {
-                using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
-                {
-                    uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
-                    jsonText = dataReader.ReadString(numBytesLoaded);
-                }
-            }
-
             //serialize the string
             if (table == Table.Passers)
             {
-                passers = JsonConvert.DeserializeObject<List<Passer>>(jsonText);
+                
                 List<Passer> result = new List<Passer>();
                 //TODO: exception handling
-                result.Add(passers.Find(p => p.RecordNumber == recordNumber));
+                foreach (Passer p in passers)
+                {
+                    if (p.RecordNumber == recordNumber)
+                    {
+                        result.Add(p);
+                    }
+                }
+                if (result.ElementAt(0).RecordNumber != recordNumber)
+                {
+                    ContentDialog failed = new ContentDialog
+                    {
+                        Title = "Failure",
+                        IsPrimaryButtonEnabled = true,
+                        PrimaryButtonText = "OK",
+                        Content = "The passer with the specified Record Number was not found."
+                    };
+                    await failed.ShowAsync();
+                    return;
+                }
                 ObservableCollection<Passer> collection = new ObservableCollection<Passer>(result);
                 APasser = collection;
 
+                
             }
             else if (table == Table.Receivers)
             {
                 receivers = JsonConvert.DeserializeObject<List<Receiver>>(jsonText);
                 List<Receiver> result = new List<Receiver>();
                 //TODO: exception handling
-                result.Add(receivers.Find(p => p.RecordNumber == recordNumber));
+                foreach (Receiver r in receivers)
+                {
+                    if (r.RecordNumber == recordNumber)
+                    {
+                        result.Add(r);
+                    }
+                }
+                if (result.ElementAt(0).RecordNumber != recordNumber)
+                {
+                    ContentDialog failed = new ContentDialog
+                    {
+                        Title = "Failure",
+                        IsPrimaryButtonEnabled = true,
+                        PrimaryButtonText = "OK",
+                        Content = "The receiver with the specified Record Number was not found."
+                    };
+                    await failed.ShowAsync();
+                    return;
+                }
                 ObservableCollection<Receiver> collection = new ObservableCollection<Receiver>(result);
                 AReceiver = collection;
-                
+
+                ContentDialog success = new ContentDialog
+                {
+                    Title = "Success",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The specific receiver was successfully selected."
+                };
+                await success.ShowAsync();
             }
             else if (table == Table.Rushers)
             {
                 rushers = JsonConvert.DeserializeObject<List<Rusher>>(jsonText);
                 List<Rusher> result = new List<Rusher>();
                 //TODO: exception handling
-                result.Add(rushers.Find(p => p.RecordNumber == recordNumber));
+                foreach (Rusher r in rushers)
+                {
+                    if (r.RecordNumber == recordNumber)
+                    {
+                        result.Add(r);
+                    }
+                }
+                if (result.ElementAt(0).RecordNumber != recordNumber)
+                {
+                    ContentDialog failed = new ContentDialog
+                    {
+                        Title = "Failure",
+                        IsPrimaryButtonEnabled = true,
+                        PrimaryButtonText = "OK",
+                        Content = "The rusher with the specified Record Number was not found."
+                    };
+                    await failed.ShowAsync();
+                    return;
+                }
                 ObservableCollection<Rusher> collection = new ObservableCollection<Rusher>(result);
                 ARusher = collection;
+
+                ContentDialog success = new ContentDialog
+                {
+                    Title = "Success",
+                    IsPrimaryButtonEnabled = true,
+                    PrimaryButtonText = "OK",
+                    Content = "The specific receiver was successfully selected."
+                };
+
+                await success.ShowAsync();
             }
             
 

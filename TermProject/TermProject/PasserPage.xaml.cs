@@ -49,12 +49,6 @@ namespace TermProject
 
         }
 
-        private void PasserPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-           
-        }
-
         private async void GetAllPassersButton_Clicked(object sender, RoutedEventArgs e)
         {
             ObservableCollection<Passer> test = new ObservableCollection<Passer>();
@@ -237,6 +231,60 @@ namespace TermProject
                         
                     }
 
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private async void SelectPasserByRecordNumberButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var selectPasserByRecordNumberDialogResult = await selectPasserByRecordNumberDialog.ShowAsync();
+
+            switch(selectPasserByRecordNumberDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    if (!Int32.TryParse(selectRecordNumberInput.Text, out int recoedNumber))
+                    {
+                        ContentDialog badInput = new ContentDialog
+                        {
+                            Title = "Failed",
+                            Content = "The given Record Number was not an integer.",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "OK"
+                        };
+                        await badInput.ShowAsync();
+                    }
+                    else
+                    {
+                        JSONRepository j = new JSONRepository();
+
+                        
+                        ObservableCollection<Passer> output = new ObservableCollection<Passer>();
+                        output = await j.GetPasserByRecordNumber(Convert.ToInt32(selectRecordNumberInput.Text));
+
+                        var passersForLoop = Passers.ToList();
+                        foreach (Passer q in passersForLoop)
+                        {
+                            Passers.Remove(q);
+                        }
+
+                        foreach (Passer p in output)
+                        {
+                            Passers.Add(p);
+                        }
+
+                        ContentDialog success = new ContentDialog
+                        {
+                            Title = "Success",
+                            IsPrimaryButtonEnabled = true,
+                            PrimaryButtonText = "OK",
+                            Content = "The specific passer was successfully selected."
+                        };
+                        await success.ShowAsync();
+                    }
                     break;
                 case ContentDialogResult.Secondary:
                     break;
