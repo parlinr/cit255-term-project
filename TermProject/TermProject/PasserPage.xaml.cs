@@ -292,5 +292,93 @@ namespace TermProject
                     break;
             }
         }
+
+        private async void QueryPassersButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            var queryPasserDialogResult = await queryPasserDialog.ShowAsync();
+
+            switch (queryPasserDialogResult)
+            {
+                case ContentDialogResult.Primary:
+                    PasserOperationData opData = new PasserOperationData();
+                    try
+                    {
+                        opData.MaxScore = Convert.ToInt32(queryMaxScoreTextBox.Text);
+                    }
+                    catch (Exception x)
+                    {
+                        opData.MaxScore = -99999;
+                    }
+                    try
+                    {
+                        opData.MinScore = Convert.ToInt32(queryMinScoreTextBox.Text);
+                    }
+                    catch (Exception x)
+                    {
+                        opData.MinScore = -99999;
+                    }
+                    try
+                    {
+                        opData.MaxYards = Convert.ToInt32(queryMaxYardsTextBox.Text);
+                    }
+                    catch (Exception x)
+                    {
+                        opData.MaxYards = -99999;
+                    }
+                    try
+                    {
+                        opData.MinYards = Convert.ToInt32(queryMinYardsTextBox.Text);
+                    }
+                    catch
+                    {
+                        opData.MinYards = -99999;
+                    }
+                    try
+                    {
+                        opData.MinTouchdowns = Convert.ToInt32(queryMinTouchdownsTextBox.Text);
+                    }
+                    catch (Exception x)
+                    {
+                        opData.MinTouchdowns = -99999;
+                    }
+                    try
+                    {
+                        opData.MaxTouchdowns = Convert.ToInt32(queryMaxTouchdownsTextBox.Text);
+                    }
+                    catch (Exception x)
+                    {
+                        opData.MaxTouchdowns = -99999;
+                    }
+
+                    BusinessLayer b = new BusinessLayer();
+                    ObservableCollection<Passer> results = b.QueryPassers(opData);
+
+                    var passersForLoop = Passers.ToList();
+                    foreach (Passer q in passersForLoop)
+                    {
+                        Passers.Remove(q);
+                    }
+
+                    foreach (Passer p in results)
+                    {
+                        Passers.Add(p);
+                    }
+
+                    ContentDialog completed = new ContentDialog
+                    {
+                        Title = "Query Complete",
+                        IsPrimaryButtonEnabled = true,
+                        PrimaryButtonText = "OK",
+                        Content = "The chosen query has been completed."
+
+                    };
+                    await completed.ShowAsync();
+                    break;
+                case ContentDialogResult.Secondary:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

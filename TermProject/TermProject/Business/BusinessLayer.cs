@@ -95,6 +95,223 @@ namespace TermProject
             
         }
 
+        public ObservableCollection<Passer> QueryPassers(PasserOperationData opData)
+        {
+            JSONRepository j = new JSONRepository();
+            j.GetAllPassersAsList();
+            List<Passer> passers = j.AllPassersList;
+            List<Passer> queryResult = new List<Passer>();
+            
+
+            if (opData.MinScore != -99999 || opData.MaxScore != -99999)
+            {
+                if (opData.MinScore != -99999 && opData.MaxScore != -99999)
+                {
+                    foreach (Passer p in passers)
+                    {
+                        if (p.Score >= opData.MinScore && p.Score <= opData.MaxScore)
+                        {
+                            queryResult.Add(p);
+                        }
+                    }
+                        
+                }
+                else if (opData.MinScore == -99999)
+                {
+                    foreach (Passer p in passers)
+                    {
+                        if (p.Score <= opData.MaxScore)
+                        {
+                            queryResult.Add(p);
+                        }
+                    }
+                        
+                }
+                else
+                {
+                    foreach (Passer p in passers)
+                    {
+                        if (p.Score >= opData.MinScore)
+                        {
+                            queryResult.Add(p);
+                        }
+                    }
+                        
+                }
+                
+            }
+            if (opData.MinYards != -99999 || opData.MaxYards != -99999)
+            {
+                if (queryResult.Count == 0)
+                {
+                    if (opData.MinYards != -99999 && opData.MaxYards != -99999)
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Yards >= opData.MinYards && p.Yards <= opData.MaxYards)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else if (opData.MinYards == -99999)
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Yards <= opData.MaxYards)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Yards >= opData.MinYards)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                }
+                else
+                {
+                    List<Passer> subQueryResult = new List<Passer>();
+                    if (opData.MinYards != -99999 && opData.MaxYards != -99999)
+                    {
+                        foreach (Passer p in queryResult)
+                        {
+                            if (p.Yards >= opData.MinYards && p.Yards <= opData.MaxYards)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else if (opData.MinYards == -99999)
+                    {
+                        foreach (Passer p in queryResult)
+                        {
+                            if (p.Yards <= opData.MaxYards)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else
+                    {
+                        foreach (Passer p in queryResult)
+                        {
+                            if (p.Yards >= opData.MinYards)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+
+                    queryResult = subQueryResult;
+                    if (queryResult.Count == 0)
+                    {
+                        return new ObservableCollection<Passer>(queryResult);
+                    }
+                }
+            }
+            
+            if (opData.MinTouchdowns != -99999 || opData.MaxTouchdowns != -99999)
+            {
+                if (queryResult.Count == 0)
+                {
+                    if (opData.MinTouchdowns != -99999 && opData.MaxTouchdowns != -99999)
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Touchdowns >= opData.MinTouchdowns && p.Touchdowns <= opData.MaxTouchdowns)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else if (opData.MinTouchdowns == -99999)
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Touchdowns <= opData.MaxTouchdowns)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else
+                    {
+                        foreach (Passer p in passers)
+                        {
+                            if (p.Touchdowns >= opData.MinTouchdowns)
+                            {
+                                queryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                }
+                else
+                {
+                    List<Passer> subQueryResult = new List<Passer>();
+                    if (opData.MinTouchdowns != -99999 && opData.MaxTouchdowns != -99999)
+                    {
+                        foreach (Passer p in queryResult)
+                        {
+                            if (p.Touchdowns >= opData.MinTouchdowns && p.Touchdowns <= opData.MaxTouchdowns)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else if (opData.MinTouchdowns == -99999)
+                    {
+                        foreach(Passer p in queryResult)
+                        {
+                            if (p.Touchdowns <= opData.MaxTouchdowns)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+                    else
+                    {
+                        foreach (Passer p in queryResult)
+                        {
+                            if (p.Touchdowns >= opData.MinTouchdowns)
+                            {
+                                subQueryResult.Add(p);
+                            }
+                        }
+                        
+                    }
+
+                    queryResult = subQueryResult;
+                    if (queryResult.Count == 0)
+                    {
+                        return new ObservableCollection<Passer>(queryResult);
+                    }
+                }
+            }
+
+            ObservableCollection<Passer> returnedCollection = new ObservableCollection<Passer>(queryResult);
+            return returnedCollection;
+
+
+        }
+
         
         #endregion
 

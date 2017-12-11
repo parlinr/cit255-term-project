@@ -71,39 +71,39 @@
                     </TextBlock>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
-                        <TextBox x:ConnectionId='32'  Name="scoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='40'  Name="scoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
-                        <TextBox x:ConnectionId='31'  Name="lastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='39'  Name="lastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
-                        <TextBox x:ConnectionId='30' Name="firstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='38' Name="firstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                         <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
-                        <TextBox x:ConnectionId='29' Name="teamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='37' Name="teamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Team Name Short</TextBlock>
-                        <TextBox x:ConnectionId='28' Name="teamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='36' Name="teamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
                         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
-                        <TextBox x:ConnectionId='27' Name="yardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='35' Name="yardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
                         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
-                        <TextBox x:ConnectionId='26' Name="touchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='34' Name="touchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
                         <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">Interceptions</TextBlock>
-                        <TextBox x:ConnectionId='25' Name="interceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='33' Name="interceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
-                        <TextBox x:ConnectionId='24' Name="recordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='32' Name="recordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
 
                 </Grid>
@@ -135,46 +135,99 @@
                     </TextBlock>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
-                        <TextBox x:ConnectionId='23'  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='31'  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
-                        <TextBox x:ConnectionId='22'  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='30'  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
-                        <TextBox x:ConnectionId='21' Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='29' Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                         <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
-                        <TextBox x:ConnectionId='20' Name="updateTeamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='28' Name="updateTeamNameLongTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Team Name Short</TextBlock>
-                        <TextBox x:ConnectionId='19' Name="updateTeamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='27' Name="updateTeamNameShortTextBox" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
                         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
-                        <TextBox x:ConnectionId='18' Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='26' Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
                         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
-                        <TextBox x:ConnectionId='17' Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='25' Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
                         <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">Interceptions</TextBlock>
-                        <TextBox x:ConnectionId='16' Name="updateInterceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='24' Name="updateInterceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
-                        <TextBox x:ConnectionId='15' Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='23' Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
                     </StackPanel>
 
                 </Grid>
             </StackPanel>
         </ContentDialog>
 
-        <ContentDialog x:ConnectionId='4' x:Name="deletePasserDialog"
+        <ContentDialog x:ConnectionId='4' x:Name="queryPasserDialog"
+                       PrimaryButtonText="Search"
+                       IsPrimaryButtonEnabled="True"
+                       IsSecondaryButtonEnabled="True"
+                       SecondaryButtonText="Cancel"
+                       Title="Query Passers">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWholeWords">
+                        Fill out the fields below to specify the passer records to look for.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Minimum Score</TextBlock>
+                        <TextBox x:ConnectionId='22'  Name="queryMinScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Maximum Score</TextBlock>
+                        <TextBox x:ConnectionId='21'  Name="queryMaxScoreTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">Minimum Yards</TextBlock>
+                        <TextBox x:ConnectionId='20' Name="queryMinYardsTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Maximum Yards</TextBlock>
+                        <TextBox x:ConnectionId='19' Name="queryMaxYardsTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Minimum Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='18' Name="queryMinTouchdownsTextBox" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Maximum Touchdowns</TextBlock>
+                        <TextBox x:ConnectionId='17' Name="queryMaxTouchdownsTextBox" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right"></TextBox>
+                    </StackPanel>
+                    
+
+                </Grid>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:ConnectionId='5' x:Name="deletePasserDialog"
                        IsPrimaryButtonEnabled="True"
                        IsSecondaryButtonEnabled="True"
                        PrimaryButtonText="Delete"
@@ -182,11 +235,11 @@
                        Title="Delete Passer">
             <StackPanel>
             <TextBlock>Enter the passer's Record Number in the box to delete the passer record.</TextBlock>
-            <TextBox x:ConnectionId='14' Name="recordNumberInput"></TextBox>
+            <TextBox x:ConnectionId='16' Name="recordNumberInput"></TextBox>
             </StackPanel>
         </ContentDialog>
 
-        <ContentDialog x:ConnectionId='5' x:Name="selectPasserByRecordNumberDialog"
+        <ContentDialog x:ConnectionId='6' x:Name="selectPasserByRecordNumberDialog"
                        IsPrimaryButtonEnabled="True"
                        IsSecondaryButtonEnabled="True"
                        PrimaryButtonText="Select"
@@ -194,13 +247,13 @@
                        Title="Select Passer by Record Number">
             <StackPanel>
                 <TextBlock>Enter the passer's Record Number in the box to select the passer record.</TextBlock>
-                <TextBox x:ConnectionId='13' Name="selectRecordNumberInput"></TextBox>
+                <TextBox x:ConnectionId='15' Name="selectRecordNumberInput"></TextBox>
             </StackPanel>
         </ContentDialog>
 
 
 
-        <GridView x:ConnectionId='6' ItemTemplate="{StaticResource PasserListDataTemplate}"
+        <GridView x:ConnectionId='7' ItemTemplate="{StaticResource PasserListDataTemplate}"
                                                              
                   Grid.Column="0">
 
@@ -214,13 +267,14 @@
 
         </GridView>
         <GridView Grid.Column="1">
-            <Button x:ConnectionId='7' Content="Get all passers"                                     />
-            <Button x:ConnectionId='8' Content="Clear screen"                                   />
-            <Button x:ConnectionId='9' Content="Add passer"                                 />
-            <Button x:ConnectionId='10' Content="Delete passer"                                    />
-            <Button x:ConnectionId='11' Content="Update passer"                                    />
-            <Button x:ConnectionId='12' Content="Select passer by Record Number"                                                  />
-            
+            <Button x:ConnectionId='8' Content="Get all passers"                                     />
+            <Button x:ConnectionId='9' Content="Clear screen"                                   />
+            <Button x:ConnectionId='10' Content="Add passer"                                 />
+            <Button x:ConnectionId='11' Content="Delete passer"                                    />
+            <Button x:ConnectionId='12' Content="Update passer"                                    />
+            <Button x:ConnectionId='13' Content="Select passer by Record Number"                                                  />
+            <Button x:ConnectionId='14' Content="Query passers"                                    />
+
         </GridView>
         
        

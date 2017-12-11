@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-11T03:31:01.132</Modified>
+      <Modified>2017-12-11T05:53:49.120</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\TermProject.exe">
       <PackagePath>entrypoint\TermProject.exe</PackagePath>
-      <Modified>2017-12-11T03:31:00.918</Modified>
+      <Modified>2017-12-11T05:53:48.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -604,11 +604,11 @@
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T21:15:16.566</Modified>
+      <Modified>2017-12-11T05:30:48.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\Core\TermProject.exe">
       <PackagePath>TermProject.exe</PackagePath>
-      <Modified>2017-12-11T03:31:01.129</Modified>
+      <Modified>2017-12-11T05:53:49.113</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
