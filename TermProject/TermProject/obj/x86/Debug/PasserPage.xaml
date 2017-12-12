@@ -310,7 +310,7 @@
 
             <Button x:ConnectionId='12'  Content="Update passer"                                    />
 
-            <Button x:ConnectionId='13'  Content="Select Record"                                                  Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+            <Button x:ConnectionId='13'  Content="Select passer"                                                  Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
 
             <Button x:ConnectionId='14'  Content="Query passers"                                    RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
 

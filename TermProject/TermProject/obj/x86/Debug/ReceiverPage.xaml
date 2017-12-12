@@ -302,7 +302,7 @@
 
             <Button x:ConnectionId='12'  Content="Update receiver"                                      />
 
-            <Button x:ConnectionId='13'  Content="Select Record"                                                    Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+            <Button x:ConnectionId='13'  Content="Select receiver"                                                    Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
 
             <Button x:ConnectionId='14'  Content="Query receivers"                                      RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
 
