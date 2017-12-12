@@ -72,15 +72,15 @@
                     </TextBlock>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
-                        <TextBox x:ConnectionId='45'  Name="scoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='45'  Name="scoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" Margin="80,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
-                        <TextBox x:ConnectionId='44'  Name="lastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='44'  Name="lastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
-                        <TextBox x:ConnectionId='43' Name="firstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='43' Name="firstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" Margin="47,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                         <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
@@ -92,19 +92,19 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
                         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
-                        <TextBox x:ConnectionId='40' Name="yardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='40' Name="yardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right" Margin="80,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
                         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
-                        <TextBox x:ConnectionId='39' Name="touchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='39' Name="touchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" Margin="35,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
                         <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">Interceptions</TextBlock>
-                        <TextBox x:ConnectionId='38' Name="interceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='38' Name="interceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right" Margin="30,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
-                        <TextBox x:ConnectionId='37' Name="recordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='37' Name="recordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" Margin="12,0,0,0"></TextBox>
                     </StackPanel>
 
                 </Grid>
@@ -136,15 +136,15 @@
                     </TextBlock>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Score</TextBlock>
-                        <TextBox x:ConnectionId='36'  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='36'  Name="updateScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" Margin="80,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Last Name</TextBlock>
-                        <TextBox x:ConnectionId='35'  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='35'  Name="updateLastNameTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">First Name</TextBlock>
-                        <TextBox x:ConnectionId='34' Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='34' Name="updateFirstNameTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" Margin="47,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                         <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Team Name Long</TextBlock>
@@ -156,19 +156,19 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
                         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Yards</TextBlock>
-                        <TextBox x:ConnectionId='31' Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='31' Name="updateYardsTextBox" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Right" Margin="80,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
                         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left">Touchdowns</TextBlock>
-                        <TextBox x:ConnectionId='30' Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='30' Name="updateTouchdownsTextBox" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" Margin="35,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
                         <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">Interceptions</TextBlock>
-                        <TextBox x:ConnectionId='29' Name="updateInterceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='29' Name="updateInterceptionsTextBox" Grid.Column="1" Grid.Row="4"  HorizontalAlignment="Right" Margin="30,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left">Record Number</TextBlock>
-                        <TextBox x:ConnectionId='28' Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='28' Name="updateRecordNumberTextBox" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" Margin="12,0,0,0"></TextBox>
                     </StackPanel>
 
                 </Grid>
@@ -200,19 +200,19 @@
                     </TextBlock>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left">Minimum Score</TextBlock>
-                        <TextBox x:ConnectionId='27'  Name="queryMinScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='27'  Name="queryMinScoreTextBox" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Maximum Score</TextBlock>
-                        <TextBox x:ConnectionId='26'  Name="queryMaxScoreTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='26'  Name="queryMaxScoreTextBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left">Minimum Yards</TextBlock>
-                        <TextBox x:ConnectionId='25' Name="queryMinYardsTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='25' Name="queryMinYardsTextBox" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                         <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">Maximum Yards</TextBlock>
-                        <TextBox x:ConnectionId='24' Name="queryMaxYardsTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right"></TextBox>
+                        <TextBox x:ConnectionId='24' Name="queryMaxYardsTextBox" Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Right" Margin="45,0,0,0"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left">Minimum Touchdowns</TextBlock>
@@ -278,7 +278,7 @@
                   Grid.Column="0">
                 <GridView.Header>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0" />
                         <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
                         <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
                         <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
