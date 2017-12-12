@@ -272,32 +272,33 @@
         </ContentDialog>
 
 
-
-        <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
+        <ScrollViewer HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Visible">
+            <GridView ItemTemplate="{StaticResource PasserListDataTemplate}"
                   ItemsSource="{x:Bind Passers, Mode=OneWay}"
                   Grid.Column="0">
-            <GridView.Header>
-                <StackPanel Orientation="Horizontal">
-                <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="7" Text="Interceptions" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="8" Text="Record Number" Padding="0,0,20,0"/>
-                </StackPanel>
-            </GridView.Header>
-            <GridView.ItemsPanel>
-                <ItemsPanelTemplate>
+                <GridView.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="7" Text="Interceptions" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="8" Text="Record Number" Padding="0,0,20,0"/>
+                    </StackPanel>
+                </GridView.Header>
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
 
-                </ItemsPanelTemplate>
-            </GridView.ItemsPanel>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+            </GridView>
+        </ScrollViewer>
 
 
-
-        </GridView>
+            
         <GridView Grid.Column="1" RenderTransformOrigin="0.52,0.256" Margin="0">
             <Button  Content="Get all passers" Click="GetAllPassersButton_Clicked" />
 

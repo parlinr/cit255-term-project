@@ -733,3 +733,13 @@ C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\R
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.xaml
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ReceiverPage.xbf
 C:\Users\RCP\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\ReceiverPage.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\bin\x86\Debug\RusherPage.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ReceiverPage.g.i.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ReceiverPage.g.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.g.i.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.g.cs
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ReceiverPage.xaml
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.xaml
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\ReceiverPage.xbf
+C:\Users\parlinr\Desktop\cit255-term-project\TermProject\TermProject\obj\x86\Debug\RusherPage.xbf

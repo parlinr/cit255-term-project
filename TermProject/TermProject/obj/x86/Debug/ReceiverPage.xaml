@@ -264,8 +264,8 @@
         </ContentDialog>
 
 
-
-        <GridView x:ConnectionId='8' ItemTemplate="{StaticResource ReceiverListDataTemplate}"
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" HorizontalScrollMode="Enabled"> 
+        <GridView x:ConnectionId='16' ItemTemplate="{StaticResource ReceiverListDataTemplate}"
                                                                
                   Grid.Column="0">
             <GridView.Header>
@@ -290,22 +290,23 @@
 
 
         </GridView>
+        </ScrollViewer>
         <GridView Grid.Column="1" RenderTransformOrigin="0.52,0.256" Margin="0">
-            <Button x:ConnectionId='9'  Content="Get all receivers"                                       />
+            <Button x:ConnectionId='8'  Content="Get all receivers"                                       />
 
-            <Button x:ConnectionId='10'  Content="Clear screen"                                   />
+            <Button x:ConnectionId='9'  Content="Clear screen"                                   />
 
-            <Button x:ConnectionId='11'  Content="Add receiver"                                   />
+            <Button x:ConnectionId='10'  Content="Add receiver"                                   />
 
-            <Button x:ConnectionId='12' Content="Delete receiver"                                      Width="113" />
+            <Button x:ConnectionId='11' Content="Delete receiver"                                      Width="113" />
 
-            <Button x:ConnectionId='13'  Content="Update receiver"                                      />
+            <Button x:ConnectionId='12'  Content="Update receiver"                                      />
 
-            <Button x:ConnectionId='14'  Content="Select Record"                                                    Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+            <Button x:ConnectionId='13'  Content="Select Record"                                                    Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
 
-            <Button x:ConnectionId='15'  Content="Query receivers"                                      RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
+            <Button x:ConnectionId='14'  Content="Query receivers"                                      RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
 
-            <Button x:ConnectionId='16'  Content="Sort receivers"                                     />
+            <Button x:ConnectionId='15'  Content="Sort receivers"                                     />
 
         </GridView>
 

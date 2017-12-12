@@ -272,48 +272,49 @@
         </ContentDialog>
 
 
-
-        <GridView x:ConnectionId='8' ItemTemplate="{StaticResource PasserListDataTemplate}"
+        <ScrollViewer HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Visible">
+            <GridView x:ConnectionId='16' ItemTemplate="{StaticResource PasserListDataTemplate}"
                                                              
                   Grid.Column="0">
-            <GridView.Header>
-                <StackPanel Orientation="Horizontal">
-                <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="7" Text="Interceptions" Padding="0,0,20,0"/>
-                <TextBlock Grid.Column="8" Text="Record Number" Padding="0,0,20,0"/>
-                </StackPanel>
-            </GridView.Header>
-            <GridView.ItemsPanel>
-                <ItemsPanelTemplate>
+                <GridView.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Grid.Column="0" Text="Score" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="1" Text="Last Name" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="2" Text="First Name" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="3" Text="Team Name Long" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="4" Text="Team Name Short" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="5" Text="Yards" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="6" Text="Touchdowns" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="7" Text="Interceptions" Padding="0,0,20,0"/>
+                        <TextBlock Grid.Column="8" Text="Record Number" Padding="0,0,20,0"/>
+                    </StackPanel>
+                </GridView.Header>
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
 
-                </ItemsPanelTemplate>
-            </GridView.ItemsPanel>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+            </GridView>
+        </ScrollViewer>
 
 
-
-        </GridView>
+            
         <GridView Grid.Column="1" RenderTransformOrigin="0.52,0.256" Margin="0">
-            <Button x:ConnectionId='9'  Content="Get all passers"                                     />
+            <Button x:ConnectionId='8'  Content="Get all passers"                                     />
 
-            <Button x:ConnectionId='10'  Content="Clear screen"                                   />
+            <Button x:ConnectionId='9'  Content="Clear screen"                                   />
 
-            <Button x:ConnectionId='11'  Content="Add passer"                                 />
+            <Button x:ConnectionId='10'  Content="Add passer"                                 />
 
-            <Button x:ConnectionId='12' Content="Delete passer"                                    Width="113" />
+            <Button x:ConnectionId='11' Content="Delete passer"                                    Width="113" />
 
-            <Button x:ConnectionId='13'  Content="Update passer"                                    />
+            <Button x:ConnectionId='12'  Content="Update passer"                                    />
 
-            <Button x:ConnectionId='14'  Content="Select Record"                                                  Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
+            <Button x:ConnectionId='13'  Content="Select Record"                                                  Width="123" AutomationProperties.Level="0" AutomationProperties.PositionInSet="0" AutomationProperties.SizeOfSet="0" HorizontalAlignment="Left" />
 
-            <Button x:ConnectionId='15'  Content="Query passers"                                    RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
+            <Button x:ConnectionId='14'  Content="Query passers"                                    RenderTransformOrigin="1.15,0.844" HorizontalAlignment="Center" HorizontalContentAlignment="Right" Margin="0" />
 
-            <Button x:ConnectionId='16'  Content="Sort passers"                                   />
+            <Button x:ConnectionId='15'  Content="Sort passers"                                   />
 
         </GridView>
 
